@@ -1,0 +1,1282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mallanna&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Mallanna&display=swap');
+/*----------------------------Home-----------------------------*/
+*{
+    box-sizing: border-box;
+}
+ul.menu {
+    text-indent: 5px;
+    list-style-type: none;
+    font-size: 26px;
+    padding: 0;
+    margin: 0;
+    background-color: #3f3f3f;
+    overflow: hidden; /*Nếu văn bản dài hơn sơ với chiều rộng/ngang thì ẩn đi*/
+    font-family: 'Roboto Slab', serif;
+    justify-content: flex-end; /*Canh theo chiều ngang*/
+    align-items: center; /* Canh theo chiều dọc*/
+    max-width: 100%;
+}
+ul.menu > li:first-child {
+    margin-right: auto;
+}
+nav > ul.menu {
+    display: flex;
+}
+ul.menu > li,{
+    max-width: 100%;
+}
+ul.menu > li:not(:first-child) > a{
+    color: rgb(213, 213, 213);
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    letter-spacing: 0;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    letter-spacing: 1.75px;
+}
+ul.menu > li:not(:first-child) > a:hover {
+    color: rgb(221, 29, 29);
+    border-bottom: 0.2rem solid rgb(221, 29, 29);
+}
+
+li.first {
+   border-top: 2px solid rgb(221, 29, 29);
+}
+.logo {
+    padding: 0;
+}
+.head-text {
+    text-align: center;
+    font-family: Questrial, sans-serif;
+    letter-spacing: 1px;
+}
+.head-text h1 {
+    margin: 3% 0 1.5% 0;
+    font-weight: bolder;
+}
+.head-text p {
+    margin-bottom: 2%;
+}
+
+/*demo1*/
+.start-demo1 h4, .start-demo2 h4 {
+    text-align: center;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+.start-demo1 > a, .start-demo2 > a{
+    color: #000;
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    letter-spacing: 0.5px;
+    font-size: 1.25rem;
+    text-decoration: underline;
+}
+.start-demo1 > a:hover, .start-demo2 > a:hover {
+    color: #6e6b6b;
+}
+.open-demo1{
+    background-color: #f3f3f3;
+    font-family: Questrial, sans-serif;
+    margin-top: 5px;
+}
+.end-demo1 img, .end-demo2 img {
+    width: 50%;
+} 
+.start-demo1 {
+    float: left;
+    margin: 2.5% 10% 0 10%;
+    width: 30%;
+    clear: both; /*clear cho demo 3 và 4*/
+}
+.carousel-inner p {
+    margin: 10px 0;
+    text-align: center;
+}
+.carousel-inner a {
+    color: #000;
+}
+
+/*demo2*/
+.start-demo2 {
+    float: right;
+    margin: 2.5% 10% 0 10%;
+    width: 30%;
+}
+
+/*demo3*/
+.slider {
+    background-color: #f3f3f3;
+    padding: 12px;
+    width: 100%;
+    height: 800px;
+}
+.items {
+    display: flex;
+    justify-content: space-evenly;
+}
+.item{
+    width: 24%;
+}
+.item img {
+    width: 100%;
+}
+.item-text {
+    padding-top: 10px;
+}
+.item-text p, .item-text pre {
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: Questrial, sans-serif;
+    font-size: 20px;
+}
+.demo3 {
+    padding: 60px 0 0 ;
+    margin-bottom: 0;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: Questrial, sans-serif;
+}
+.button-demo3  {
+    clear: left;
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    color: #000;
+    font-size: 1.25rem;
+    text-decoration: underline;
+    font-family: Questrial, sans-serif;
+}
+.button-demo3:hover {
+    color: #6e6b6b;
+}
+.carousel-control-prev ,
+.carousel-control-next {
+    color: black !important;
+    font-size: 20px;
+    font-weight: 100;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    border-radius: 50%;
+    opacity: 0 !important;
+    letter-spacing: 0.5px;
+}
+.start-demo1:hover .carousel-control-prev,
+.start-demo1:hover .carousel-control-next, 
+.start-demo2:hover .carousel-control-prev,
+.start-demo2:hover .carousel-control-next,
+.slide:hover .carousel-control-prev,
+.slide:hover .carousel-control-next, 
+.slide:hover button.add-to-bag {
+    opacity: 1 !important;
+    transition: 0.25s ease-in;
+}/*----------------------------End Home-----------------------------*/
+
+
+
+
+
+
+
+.product-1 {
+    position: relative;
+}
+.add-to-bag {
+    position: absolute;
+    text-align: center !important;
+    width: 95%;
+    height: 40px;
+    margin: 0 2.5%;
+    bottom: 1.25%;
+    background-color: white;
+    border: none;
+    font-family: 'Questrial', sans-serif; 
+    opacity: 0;
+}
+
+
+
+
+
+/*------------------------------Contact--------------------------------*/
+div.header {
+    height: 500px;
+    background-image: url(/Images/Contact-Wallet.jpg);
+    background-position-y: -120px;
+    background-position-x: -100px;
+    background-size: cover; /* Tự động giãn so với kích thước */
+    background-attachment: fixed; /* Cố định hình */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.header > p {
+    font-family: Questrial, sans-serif;
+    font-size: 75px;
+    background-color: transparent; /* Nền trong suốt*/
+    color: white;
+    font-family: inherit;
+    text-shadow: 5px 5px 15px #000;
+    font-weight: lighter; /* Chữ mỏng*/
+}
+div.lienhe > p:first-child {
+    font-family: Questrial, sans-serif;
+    font-size: 2.625rem;
+    letter-spacing: 0.25rem;
+    padding-top: 13px;
+    padding-left: 100px;
+    letter-spacing: 0.5px;
+}
+div.lienhe > p:not(:first-child), p > iframe { /* Lấy tất cả thẻ p trong class="lienhe" trừ đứa đầu */
+    width: 51%;
+    padding-right: 5%;
+    font-family: Questrial, sans-serif;
+    font-size: 20px;
+    padding-left: 150px; /* Canh lề trái */
+    line-height: 20px; /* Khoảng cách giữa các dòng */
+    float: left;
+    font-family: 'Mallanna', sans-serif;
+    display: inline-block;
+}
+ul > input {
+    font-family: "AktivGrotesk-Regular";
+    font-size: 0.91rem;
+    border: 1px solid #181818;
+    height: 45px;
+    width: 40%;
+}
+textarea {
+    font-family: "AktivGrotesk-Regular";
+    font-size: 0.91rem;
+    border: 1px solid #181818;
+    width: 40%;
+}
+input.button {
+    background-color: black;
+    color: whitesmoke;
+    width: 60px;
+    font-family: 'Besley', serif;
+    font-size: 17px;
+    font-weight: bold;
+    width: 80px;
+}
+input.button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black ;
+}
+/*------------------------------End Contact--------------------------------*/
+
+
+
+
+/*-------------------------------Button Go-to-top-------------------------*/
+.gotop {
+    display: flex;
+    position: fixed;
+    bottom: 35px;
+    right: 15px;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    height: 40px;
+    width: 50px;
+    line-height: 40px;
+    background-color: rgb(0,0,0,0.7);
+    color: white;
+    opacity: 0; /* Độ mờ */
+    cursor: pointer;
+    border-radius: 20px;
+    visibility: hidden;
+    z-index: 99;
+}
+.gotop:hover {
+    background-color: gray;
+    color: white;
+}
+.hien-ra {
+    visibility: visible;
+    opacity: 1;
+}
+/*-------------------------------Button Go-to-top-------------------------*/
+
+
+
+
+
+
+
+/*--------------------------------Carousel------------------------------*/
+.carousel-inner img {
+    width: 100%;
+    align-content: center;
+}
+.carousel-caption .btn {
+    font-family: 'Questrial', sans-serif; 
+    font-size: 25px;
+}
+.carousel-caption h3.demo {
+    font-family: 'Questrial', sans-serif;
+    font-size: 25px;
+    text-shadow: 10px 10px 10px #000;
+    letter-spacing: 0.1rem;
+}
+
+.carousel-caption h1 {
+    font-family: inherit;
+    text-shadow: 10px 10px 15px #000;
+    width: 100%;
+}
+.carousel-caption {
+    position: absolute;
+    top: 40%;
+}
+
+.btn-secondary {
+    background-color: black;
+}
+.btn-secondary:hover {
+    background-color: white;
+    border-color: white;
+    color:  black;
+}
+
+.hr-header {
+    border-top: 1px solid #0e0d0d;
+	width: 75%;
+    clear: left;
+    margin: revert;
+}
+/*--------------------------------End Carousel------------------------------*/
+
+
+
+
+
+/*-------------------------NEWLETTER--------------------------*/
+.newletter {
+    text-align: center !important;
+    clear: left;
+}
+.text-newletter {
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    margin-top: 4.25rem;
+    font-size: 26px;
+    font-weight: 500;
+}
+.content-newletter {
+    font-weight: 490;
+    font-family: Questrial, sans-serif;
+    letter-spacing: 1px;
+    margin-bottom: 20px ;
+}
+.inputEmail {
+    height: 3rem;
+    border: none;
+    border-bottom: 2px solid rgb(170, 168, 168);
+    border-bottom-left-radius: 7px;
+    font-size: 1rem;
+    width: 400px;
+    text-align: center; 
+}
+.inputEmail:hover {
+    border-bottom: 3px solid black !important;
+}
+.submit {
+    height: 45px;
+    width: 400px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    color: #f3f3f3;
+    background-color: black;
+    border: none;
+    text-align: center;
+}
+.submit:hover {
+    color: black;
+    background-color: #f3f3f3;
+    border: 2px solid black ;
+}
+div.form-content {
+    display: block;
+    margin-bottom: 0px;
+}
+div.form-content span {
+    display: block;
+    text-align: center;
+}
+.form-content.invalid .form-erro {
+    padding-top: 2px;
+    color: #f33a58;
+    font-family: Questrial, sans-serif;
+}
+.form-content.invalid .inputEmail {
+    border-color: #f33a58;
+    font-family: Questrial, sans-serif;
+}
+/*-------------------------End NEWLETTER--------------------------*/
+
+
+
+
+/*-------------------------Footer---------------------------- */
+.footer {
+    background-color: #3f3f3f;
+	color: #d5d5d5;
+    font-family: Questrial, sans-serif;
+    font-size: 26px;
+    clear: left;
+}
+div > h2 {
+    font-family: Questrial, sans-serif;
+}
+.text-footer {
+    font-weight: 500;
+    letter-spacing: 0.125rem;
+    clear: left;
+}
+.copy {
+    text-align: center !important;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.hr-end {
+    border-top: 1px solid #d5d5d5;
+	width: 90%;
+}
+ h2, .social {
+    text-align: center !important; /* Canh giữa*/
+}
+.hr-footer {
+    border-top: 1px solid #d5d5d5;
+	width: 75%;
+    text-align: center !important;
+    margin: revert;
+}
+div.item-footer > div {
+    width: 32%;
+    display: inline-block;
+    text-align: center !important;
+    top: 0;
+}
+.social > a  {
+    clear: left;
+	font-size: 3em;/*1em = 16px*/
+	padding: 3rem;/*1rem = 1 "font-size" */
+}
+.fa-facebook {
+	color: #3b5998;
+}
+.fa-twitter {
+	color: #00aced;	
+}
+.fa-google-plus-g {
+	color: #dd4b39;
+}
+.fa-instagram {
+	background: -webkit-linear-gradient(45deg, yellow, orange, red, rgb(177, 46, 133), rgb(109, 16, 109));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fa-youtube {
+	color: #bb0000;
+}
+/*-------------------------End Footer---------------------------- */
+
+
+
+
+
+
+::-webkit-scrollbar { /* Xóa mép thanh scroll */
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(134, 133, 133);
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(78, 76, 76);
+}
+
+
+
+/*------------------------MEDIA QUERY------------------------------*/
+@media screen and (max-width: 1050px) /*150%*/ {
+    /*---------------Newletter---------------*/
+    .inputEmail, .submit {
+        width: 300px;
+        font-size: 16px;
+    }
+    .inputEmail {
+        height: 2.5rem;
+    }
+    .form-content span {
+        font-size: 15px;
+    }
+    /*---------------End Newletter---------------*/
+
+
+
+
+
+    /*-------------------Contact-----------------*/
+    div.header {
+        height: 250px;
+    }
+    div.header > p {
+        font-size: 60px;
+    }
+    div.lienhe > p:first-child {
+        padding-left: 40px;
+        margin-bottom: 0;
+    }
+    div.lienhe > p:not(:first-child), p > iframe {
+        font-size: 15px;
+        padding-left: 30px;
+        margin-bottom: 7px;
+    }
+    input.button {
+        font-size: 10px;
+        width: 50px;
+        height: 30px;
+    }
+    ul > input, textarea {
+        font-size: 15px;
+        width: 350px;
+    }
+    ul > input {
+        height: 35px;
+    }
+    .responds ul {
+        margin: 15px !important;
+    }
+
+    /*-------------------End Contact-----------------*/
+
+    /*-------------------Home & Products-----------------*/
+    .logo {
+        display: none;
+    }
+    .slider {
+        height: 450px;
+    }
+    .carousel-caption h1{
+		font-size: 2.25rem;
+	}
+	.carousel-caption h3.demo{		
+		font-size: 15px;		
+	}
+	.carousel-caption .btn{		
+		font-size: 15px;		
+	}
+    div.header-product {
+        height: 250px;
+    }
+    .new > h3 {
+        font-size: 30px !important;
+    }
+    .new > p, div.text-product p, p.collection {
+        font-size: 60%;
+    }
+    .add-to-bag {
+        font-size: 70%;
+        height: 32px;
+    }
+    .new > p {
+        margin-bottom: 10px;
+    }
+    p.collection {
+        padding-top: 5px;
+    }
+    .menu-product > li > a, pre{
+        font-size: 70%;
+        padding: 8px;
+    }
+    div.text-product pre {
+        font-size: 60%;
+    }
+    ul.menu-product {
+        padding-left: 20px;
+    }
+    .new > h3, div.header-product > p {
+        font-size:  50px;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        font-size: 50%;
+        width: 20px;
+        height: 20px;
+    }
+    .carousel-indicators li {
+        width: 15px;
+        height: 2px;
+        bottom: 10px;
+    }
+    dl, ol, ul {
+        margin-bottom: 5px;
+    }
+    ul.menu > li:not(:first-child) > a:hover {
+        border-bottom: 2px solid rgb(221, 29, 29);
+    }
+    .head-text h1 {
+        font-size: 30px;
+    }
+    .head-text p, .carousel-inner p, .item-text pre {
+        font-size: 0.75rem;
+    }
+    .carousel-inner p:last-child {
+        margin: 0;
+    }
+    .carousel-inner p {
+        margin-bottom: 0;
+    }
+    .start-demo1 h4, .start-demo2 h4, .demo3 {
+        font-size: 20px;
+        padding-top: 5px;
+    }
+    .start-demo1 > a, .start-demo2 > a, .button-demo3 {
+        font-size: 0.75rem;
+        margin: 0;
+    }
+    /*------------------- End Home & Products-----------------*/
+
+    /*-------------------Footer-----------------*/
+
+    .end p {
+        font-size: 75%;
+    }
+    .end hr {
+        width: 20%;
+    }
+    div.item-footer > div {
+        font-size: 60%;
+    }
+    .title-footer {
+        font-size: 1rem;
+    }
+    .social > a  {
+        font-size: 2rem;
+    }
+    .hr-footer {
+        width: 70%;
+        margin: revert;
+    }
+    /*-------------------End Footer-----------------*/
+    .gotop {
+        font-size: 10px;
+        width: 25px;
+        height: 20px;
+        align-items: center;
+        bottom: 20px;
+    }
+    ::-webkit-scrollbar {
+        width: 7px;
+    }
+    .hidden-img3 {
+        display: block;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 900px) {
+    ul.menu > li:not(:first-child) > a  {
+        font-size: 80%;
+        padding: 8px;
+    }
+}
+@media screen and (max-width: 800px) /*200%*/ {
+    .slider {
+        height: 400px;
+    }
+    .content-newletter {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 750px) /*250%*/ {
+    /*---------------Newletter---------------*/
+    .inputEmail, .submit {
+       width: 250px;
+        font-size: 12px;
+        height: 2rem;
+    }
+    .submit:hover {
+        border: 1px solid black;
+    }
+    .submit {
+        margin: 0;
+    }
+    .text-newletter{
+        font-size: 17px;
+        margin-top: 40px;
+        margin-bottom: 5px;
+        
+    }
+    .content-newletter {
+        font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+    .form-content span {
+        font-size: 11px;
+    }
+    /*---------------End Newletter---------------*/
+
+
+
+
+
+
+
+    /*-------------------Contact-----------------*/
+    div.header {
+        height: 200px;
+    }
+    div.header > p {
+        font-size: 30px;
+    }
+    div.lienhe > p:first-child {
+        font-size: 25px;
+        padding-left: 30px;
+        margin-bottom: 0;
+    }
+    div.lienhe > p:not(:first-child), p > iframe {
+        font-size: 10px;
+        padding-left: 20px;
+        margin-bottom: 5px;
+        line-height: 10px;
+    }
+    input.button {
+        font-size: 10px;
+        width: 50px;
+        height: 30px;
+    }
+    ul > input, textarea {
+        font-size: 12px;
+        width: 280px;
+        border: 1px solid black;
+    }
+    ul > input {
+        height: 30px;
+    }
+/*-------------------End Contact-----------------*/
+
+
+
+
+
+/*-------------------Home & Products------------------------*/
+    .slider {
+        height: 300px;
+    }
+    .carousel-caption h1{
+		font-size: 1.85rem;
+	}
+	.carousel-caption h3.demo, .carousel-caption .btn{		
+		font-size: 10px;		
+	}
+	.carousel-caption .btn{		
+		font-size: 10px;		
+	}
+    ul.menu > li:not(:first-child) > a  {
+        font-size: 30%;
+        padding: 5px;
+    }
+    div.header-product {
+        height: 150px;
+    }
+    .new > h3 {
+        font-size: 25px !important;
+    }
+    .new > p, div.text-product p, p.collection, div.text-product pre {
+        font-size: 50%;
+        letter-spacing: 0.25px;
+    }
+    .add-to-bag {
+        font-size: 50%;
+        height: 20px;
+    }
+    p.collection {
+        padding-top: 5px;
+    }
+    .menu-product > li > a {
+        font-size: 50%;
+        padding: 5px;
+    }
+    ul.menu-product {
+        padding-left: 10px;
+    }
+    .new > h3, div.header-product > p {
+        font-size:  30px;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        font-size: 35%;
+        width: 15px;
+        height: 15px;
+    }
+    .carousel-indicators li {
+        width: 15px;
+        height: 1px;
+        bottom: 5px;
+    }
+    dl, ol, ul {
+        margin-bottom: 5px;
+    }
+    ul.menu > li:not(:first-child) > a:hover {
+        border-bottom: 1.5px solid rgb(221, 29, 29);
+    }
+    .head-text h1 {
+        font-size: 30px;
+    }
+    .head-text p, .carousel-inner p, .item-text pre {
+        font-size: 8px;
+    }
+    .carousel-inner p:last-child {
+        margin: 0;
+    }
+    .carousel-inner p {
+        margin-bottom: 0;
+    }
+    .start-demo1 h4, .start-demo2 h4, .demo3 {
+        font-size: 15px;
+        margin: 0;
+    }
+    .start-demo1 > a, .start-demo2 > a, .button-demo3 {
+        font-size: 0.55rem;
+        margin: 0;
+    }
+    /*-------------------End Home & Products------------------------*/
+
+
+
+    
+    /*-------------------Footer------------------------*/
+    .end p {
+        font-size: 50%;
+        padding-top: 40px;
+    }
+    .end hr {
+        width: 20%;
+        border-top: 1px solid black;
+    }
+    .text-footer {
+        font-size: 18px;
+    }
+    div.item-footer > div {
+        font-size: 50%;
+    }
+    div.item-footer  p {
+        margin-bottom: 7px;
+    }
+    .title-footer {
+        font-size: 0.75rem;
+    }
+    .social > a  {
+        font-size: 1.5rem;
+        padding: 1.4rem;
+    }
+    .hr-footer {
+        width: 70%;
+        margin: revert;
+    }
+    /*-------------------End Footer------------------------*/
+
+    .gotop {
+        font-size: 7px;
+        width: 20px;
+        height: 15px;
+        align-items: center;
+        bottom: 10px;
+    }
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    .hidden-img3 {
+        display: block;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 600px) /*300%*/ {
+    /*---------------Newletter---------------*/
+    .inputEmail, .submit {
+        width: 200px;
+        font-size: 10px;
+        height: 1.5rem;
+    }
+    .submit:hover {
+        border: 1px solid black;
+    }
+    .text-newletter{
+        font-size: 12px;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+    .content-newletter {
+        font-size: 8px;
+    }
+    .form-content span {
+        font-size: 9px;
+
+    }
+    /*---------------End Newletter---------------*/
+
+
+
+
+    /*-------------------Contact-----------------*/
+    div.header > p {
+        font-size: 30px;
+    }
+    div.lienhe > p:first-child {
+        font-size: 20px;
+        padding-left: 20px;
+        margin-bottom: 0;
+    }
+    div.lienhe > p:not(:first-child), p > iframe {
+        font-size: 10px;
+        padding-left: 10px;
+        margin-bottom: 3px;
+    }
+    input.button {
+        font-size: 8px;
+        width: 40px;
+        height: 20px;
+    }
+    ul > input, textarea {
+        font-size: 8px;
+        width: 230px;
+        border: 0.75px solid black;
+    }
+    ul > input {
+        height: 25px;
+    }
+    .responds ul {
+        margin: 10px !important;
+    }
+    /*-------------------End Contact-----------------*/
+
+    /*-------------------Home & Products------------------------*/
+    .slider {
+        height: 270px;
+    }
+    .carousel-caption h1{
+		font-size: 1.5rem;
+	}
+	.carousel-caption h3.demo{		
+		font-size: 10px;
+        letter-spacing: 0.5px;		
+	}
+	.carousel-caption .btn{		
+		font-size: 10px;
+        padding: 5px 10px;
+        border-radius: 5px;		
+	}
+    .new > h3 {
+        font-size: 15px !important;
+        margin: 5px 0 !important;
+    }
+    .new > p, div.text-product p, p.collection {
+        font-size: 35%;
+        letter-spacing: 0.25px;
+    }
+    .add-to-bag {
+        font-size: 40%;
+        height: 15px;
+    }
+    p.collection {
+        padding-top: 5px;
+    }
+    .menu-product > li > a {
+        font-size: 35%;
+        padding: 4px;
+    }
+    div.text-product pre {
+        font-size: 35%;
+    }
+    .new > h3 {
+        font-size: 25px;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        font-size: 28%;
+        width: 12px;
+        height: 12px;
+    }
+    .carousel-indicators li {
+        width: 25px;
+        height: 1px;
+        bottom: 5px;
+    }
+    dl, ol, ul {
+        margin-bottom: 0px;
+    }
+    ul.menu > li:not(:first-child) > a:hover {
+        border-bottom: 1px solid rgb(221, 29, 29);
+    }
+    .head-text h1 {
+        font-size: 20px;
+        margin: 1.5% 0px 1%;
+    }
+    /*-------------------End Home & Products------------------------*/
+    
+    /*--------------Footer------------*/
+    .end p {
+        font-size: 40%;
+    }
+    .end hr {
+        width: 25%;
+        border-top: 0.75px solid black;
+    }
+    .text-footer {
+        font-size: 15px;
+        letter-spacing: 0.25px;
+    }
+    .social > a  {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    div.item-footer > div {
+        font-size: 35%;
+    }
+    div.item-footer  p {
+        margin-bottom: 5px;
+    }
+    .title-footer {
+        font-size: 0.55rem;
+        margin: 7px 0;
+    }
+    .hr-footer {
+        width: 70%;
+        margin: revert;
+    }
+    div.copy h5{
+        font-size: 50%;
+    }
+    /*--------------End Footer------------*/
+    
+
+
+
+    .gotop {
+        font-size: 5px;
+        width: 15px;
+        height: 12px;
+        align-items: center;
+        bottom: 5px;
+        right: 8px;
+    }
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    .hidden-img3 {
+        display: block;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 450px) /*400%*/ {
+    /*---------------Newletter---------------*/
+    .inputEmail, .submit {
+        width: 150px;
+    }
+    .submit:hover {
+        border: 0.75px solid black;
+    }
+    .text-newletter{
+        font-size: 8px;
+        margin-top: 30px;
+        margin-bottom: 5px;
+        
+    }
+    .content-newletter {
+        font-size: 7px;
+        letter-spacing: 0.25px;
+    }
+    /*---------------End Newletter---------------*/
+
+
+
+
+    /*-------------------Contact-----------------*/
+    div.header {
+        height: 150px;
+    }
+    div.header > p {
+        font-size: 20px;
+    }
+    div.lienhe > p:first-child {
+        font-size: 15px;
+    }
+    div.lienhe > p:not(:first-child), p > iframe {
+        font-size: 8px;
+    }
+    ul > input, textarea {
+        font-size: 7px;
+        width: 170px;
+        border: 0.5px solid black;
+        border-radius: 2px;
+    }
+    ul > input {
+        height: 20px;
+    }
+    .responds ul {
+        margin: 5px !important;
+    }
+    /*-------------------End Contact-----------------*/
+    
+    /*-------------------Home------------------------*/
+    .slider {
+        height: 200px;
+    }
+    .head-text p, .carousel-inner p {
+        font-size: 5px;
+    }
+    .add-to-bag {
+        font-size: 30%;
+        height: 12px;
+    }
+    .item-text pre {
+        padding: 0px;
+        font-size: 5px;
+    }
+    .carousel-inner p:last-child {
+        margin: 0;
+    }
+    .carousel-inner p {
+        margin-bottom: 0;
+    }
+    .start-demo1 h4, .start-demo2 h4, .demo3 {
+        font-size: 13px;
+        padding-top: 5px;
+        margin: 0;
+    }
+    .start-demo1 > a, .start-demo2 > a, .button-demo3 {
+        font-size: 0.3rem;
+        margin: 0;
+    }
+    div.item-footer > div {
+        font-size: 25%;
+    }
+    div.item-footer  p {
+        margin-bottom: 5px;
+    }
+    .title-footer {
+        font-size: 0.45rem;
+        margin: 7px 0;
+    }
+    .hidden-img3 {
+        display: block;
+        margin-top: 30px;
+    }
+    
+}
+@media screen and (max-width: 360px) /*500%*/ {
+    /*---------------Newletter---------------*/
+    .inputEmail, .submit {
+        width: 130px;
+        font-size: 8px;
+        height: 1.25rem;
+    }
+    .submit:hover {
+        border: 0.75px solid black;
+    }
+    .text-newletter{
+        font-size: 8px;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+    .content-newletter {
+        font-size: 5px;
+        letter-spacing: 0.25px;
+    }
+    .form-content span {
+        font-size: 7px;
+
+    }
+    /*---------------End Newletter---------------*/
+
+
+
+
+    /*-------------------Contact-----------------*/
+    div.header {
+        height: 100px;
+    }
+    div.header > p {
+        font-size: 20px;
+    }
+    div.lienhe > p:first-child {
+        font-size: 10px;
+        padding: 5px 0 0 5px;
+    }
+    div.lienhe > p:not(:first-child), p > iframe {
+        font-size: 5px;
+        line-height: 5px;
+    }
+    ul > input, textarea {
+        font-size: 7px;
+        width: 120px;
+        border: 0.35px solid black;
+        border-radius: 1.5px;
+    }
+    ul > input {
+        height: 15px;
+    }
+    .responds ul {
+        margin: 0px !important;
+    }
+
+    /*-------------------End Contact-----------------*/
+
+    /*-------------------Home------------------------*/
+    .slider {
+        height: 170px;
+    }
+    .carousel-caption h1{
+		font-size: 1rem;
+	}
+    .add-to-bag {
+        font-size: 25%;
+        height: 10px;
+    }
+	.carousel-caption h3.demo{		
+		font-size: 5px;	
+        letter-spacing: 0.5px;
+        margin-bottom: 0;	
+	}
+	.carousel-caption .btn{		
+		font-size: 5px;	
+        padding: 3px 6px;
+        border: 0.5px solid white;	
+        border-radius: 3.5px;
+	}
+    .start-demo1 h4, .start-demo2 h4, .demo3 {
+        font-size: 10px;
+        padding-top: 0;
+    }
+    .start-demo1 > a, .start-demo2 > a, .button-demo3 {
+        font-size: 0.2rem;
+    }
+    .head-text p, .carousel-inner p, .item-text pre {
+        font-size: 5px;
+    }
+/*-------------------End Home------------------------*/
+
+    ul.menu > li:not(:first-child) > a  {
+        font-size: 30%;
+        padding: 1px;
+        letter-spacing: 0.5px;
+    }
+    .hr-end {
+        margin: revert;
+    }
+}
+/*------------------------END MEDIA QUERY------------------------------*/

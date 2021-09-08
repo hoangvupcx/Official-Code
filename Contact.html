@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> 
+    <title>VestonVux | Contact</title>
+    <link rel="stylesheet" href="/Css/Home.css">
+    <link rel="stylesheet" href="/Css/Items-Product.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function checkNumber() {
+                var x = document.getElementById("number").value
+                if(isNaN(x)){
+                    document.getElementById("number").style.border = "1px solid red"
+                }
+                else {
+                    document.getElementById("number").style.border = "none"
+                }
+            }
+
+        $(document).ready(function() {
+            $(window).scroll(function(event) {
+                var pos_body = $('html,body').scrollTop();
+                if(pos_body>20){
+                    $('.gotop').addClass('hien-ra');
+                }
+                else{
+                    $('.gotop').removeClass('hien-ra');
+                }
+            });
+            $('.gotop').click(function(event) {
+                $('html,body').animate({scrollTop: 0},800);
+            });
+        });
+
+       /* var timeOut;
+        function scrollToTop() {
+            if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
+                window.scrollBy(0, -50);
+                timeOut = setTimeout('scrollToTop()', 10)
+            }
+            else {
+                clearTimeout(timeOut);
+            }
+        } */
+    </script>
+    <style>
+        .menu li:nth-child(7) > a {
+            color: red !important;
+        }
+    </style>
+</head>
+<body>
+    <!--Navigation-->
+    <nav>
+        <ul class="menu">
+            <li class="logo">
+                <a href=""><img src="/Images/b063e54510aa17f2357bdf14637f1bc3d9b58466922ab1f3651ac0dd249882b1-render.png" alt=""></a>
+            </li>
+            <li>
+                <a href="/index.html">HOME</a>
+            </li>
+            <li><a href="/New.html">NEW</a></li>
+            <li><a href="/Sale.html">SALE</a></li>
+            <li><a href="/Products.html">PRODUCTS</a></li>
+            <li><a href="https://goo.gl/maps/tdfj13J3TevS7zUs8">DIRECTION</a></li>
+            <li class="right"><a href="/Contact.html">CONTACT</a></li>
+            <li class="right"><a href="/About.html">ABOUT</a></li>
+        </ul>
+    </nav>
+
+    <!--Contact-->
+    <section class="contact">
+        <div class="header">
+            <p>CONTACT</p>
+        </div>
+        <div class="lienhe">
+            <p>CONTACT</p>
+            <p><i class="fas fa-phone-alt"></i> Hotline: (84+) 028.3920.7621 </p>
+            <p><i class="fas fa-map-marker-alt"></i> 371 Nguyen Kiem, Ward 3, Go Vap District, HCM city</p>
+            <p><i class="fas fa-envelope"></i> info@vestonvux.com</p>
+        </div>
+        <p class="lienhe">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9284417619238!2d106.67618761480114!3d10.81678819229415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e1904532b1%3A0x9851d48b0be5bdfd!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5o!5e0!3m2!1svi!2s!4v1629261149034!5m2!1svi!2s" width="50%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </p>
+        <div class="responds">
+            <form action="">
+                <ul><input type="text" placeholder="Full name"  required></ul>
+                <ul><input type="email" placeholder="Email Address"  required></ul>
+                <ul><input oninput="checkNumber()" id="number" type="text" placeholder="Phone number" required></ul>
+                <ul><textarea class="contact" name="description" cols="60" rows="13" placeholder="Comment" ></textarea></ul>
+                <ul><input type="submit" class="button" value="SEND"></ul>
+            </form>
+        </div> 
+        <div class="gotop">
+            <a id="mybutton" href="#">
+                <i class="fas fa-chevron-up" onclick="scrollToTop()" style="color: white;">
+                </i>
+            </a>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <hr style="visibility:hidden;">
+        <hr class="hr-header">
+        <div class="abc">	
+            <div>
+                <div>
+                    <h2 class="text-footer">CONTACT US</h2>
+                </div>
+                <div class="social">
+                    <a href="https://vi-vn.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/?lang=vi"><i class="fab fa-twitter"></i></a>
+                    <a href="https://ads.google.com/intl/vi_vn/getstarted/?subid=vn-vi-ha-awa-bk-c-l00!o3~Cj0KCQjwpreJBhDvARIsAF1_BU0gVty5XnpyxESqt2ekO4PX48hqa7GhxhUliWslavbkWfshDjcpb70aAhLTEALw_wcB~123593086017~kwd-21283811~13984401112~538552239800&gclsrc=aw.ds&gclid=Cj0KCQjwpreJBhDvARIsAF1_BU0gVty5XnpyxESqt2ekO4PX48hqa7GhxhUliWslavbkWfshDjcpb70aAhLTEALw_wcB"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                    <hr style="visibility: hidden;">
+                </div>
+            </div>
+        </div>
+    <footer class="footer abc">
+        <div class="row item-footer">
+            <div>
+                <hr class="hr-footer">
+                <h5 class="title-footer">NEED HELP?</h5>
+                <hr class="hr-footer">
+				<p>(028) 3920.7621</p>
+				<p>info@vestonvux.com</p>
+				<p>371 Nguyen Kiem, Ward 3, Go Vap District, HCM city</p>
+            </div>
+            <div>
+                <hr class="hr-footer">
+                <h5 class="title-footer">WORKING HOURS</h5>
+                <hr class="hr-footer">
+                <p>Monday-Friday: 8:00 - 20:00</p>
+				<p>Weekend: 8:00 - 17:00</p>
+            </div>
+            <div>
+                <hr class="hr-footer">
+				<h5 class="title-footer">BECOME A MEMBER</h5>
+				<hr class="hr-footer">
+                <p>Join now and get 10% off your second purchase, and free returns on all online purchases!</p>
+            </div>
+        </div>
+        <div class="copy">
+            <hr class="hr-end">
+                <h5> Copyright &copy; VESTONVUX</h5>
+        </div>
+    </footer>
+</body>
+</html>

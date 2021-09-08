@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> 
+    <title>VestonVux | Home</title>
+    <link rel="stylesheet" href="/Css/Home.css">
+    <link rel="stylesheet" href="/Css/Login.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/Js/Validation.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function(event) {
+                var pos_body = $('html,body').scrollTop();
+                if(pos_body>20){
+                    $('.gotop').addClass('hien-ra');
+                }
+                else{
+                    $('.gotop').removeClass('hien-ra');
+                }
+            });
+
+            $('.gotop').click(function(event) {
+                $('html,body').animate({scrollTop: 0},800);
+            });
+        });
+       
+    </script>
+    <style>
+        .menu li:nth-child(2) > a {
+            color: red !important;
+        }
+    </style>
+</head>
+<body>
+    <!--Navigation-->
+    <nav>
+        <ul class="menu">
+            <li class="logo">
+                <a href=""><img src="/Images/logo.png" alt=""></a>
+            </li>
+            <li>
+                <a href="/index.html">HOME</a>
+            </li>
+            <li><a href="/New.html">NEW</a></li>
+            <li><a href="/Sale.html">SALE</a></li>
+            <li><a href="/Products.html">PRODUCTS</a></li>
+            <li><a href="https://goo.gl/maps/tdfj13J3TevS7zUs8">DIRECTION</a></li>
+            <li class="right"><a href="/Contact.html">CONTACT</a></li>
+            <li class="right"><a href="/About.html">ABOUT</a></li>
+        </ul>
+    </nav>
+
+    <!--Carousel-->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+          <li data-target="#demo" data-slide-to="3"></li>
+          <li data-target="#demo" data-slide-to="4"></li>
+          <li data-target="#demo" data-slide-to="5"></li>
+        </ul>
+      
+        <!-- The slideshow -->
+        <div class="carousel-inner abc">
+          <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1498712938623-d2bee166c195?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80" alt="pic1">
+            <div class="carousel-caption">
+                <h1 class="text display-4">VESTONVUX</h1>
+                <div style="line-height: 1px;">
+                    <h3 class="demo" style="text-transform:uppercase; margin-bottom: 0;">VIEW THE COLLECTION IN REAL TIME</h3>
+                    <h3 class="demo" style="text-transform:uppercase; ">FROM THE COMFORT OF YOUR HOME</h3>
+                </div>
+                <a href="/Products.html"><button type="button" class="btn btn-outline-light btn-lg">OVERVIEW</button></a>
+                <!--<button type="button" class="btn btn-secondary btn-lg">DISCOVER MORE</button>-->
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="picture" src="https://images.unsplash.com/photo-1507214368698-578e273abb87?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80" alt="pic2">
+            <div class="carousel-caption">
+                <h1 class="text display-4">SUITS FOR YOU</h1>
+                <h3 class="demo" style="text-transform:uppercase; ">available online and inselected boutiques</h3>
+                <a href="/Products.html"><button type="button" class="btn btn-outline-light btn-lg">SHOP NOW</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="picture" src="https://images.pexels.com/photos/3778928/pexels-photo-3778928.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="pic3">
+            <div class="carousel-caption">
+                <h1 class="text display-4">BLAZERS</h1>
+                <h3 class="demo" style="text-transform:uppercase; ">Fashion is an iron cover to fight reality in everyday life</h3>
+                <a href="/Product-Blazers.html"><button type="button" class="btn btn-outline-light btn-lg">EXPLORE</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="picture" src="https://images.pexels.com/photos/3778546/pexels-photo-3778546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="pic4">
+            <div class="carousel-caption">
+                <h1 class="text display-4">TUXEDOS</h1>
+                <h3 class="demo" style="text-transform:uppercase; ">VIEW THE COLLECTION IN THE REAL TIME FROM THE COMFORT OF YOUR HOME</h3>
+                <a href="/Product-Tuxedos.html"><button type="button" class="btn btn-outline-light btn-lg">START THE VIRTUAL TOUR</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="picture" src="https://images.unsplash.com/photo-1523504706857-0b1cc4956993?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="pic5">
+            <div class="carousel-caption">
+                <h1 class="text display-4">VESTS</h1>
+                <h3 class="demo" style="text-transform:uppercase; ">How can the quintessence of world fashion be close to you?</h3>
+                <a href="/Product-Giles&Vests.html"><button type="button" class="btn btn-outline-light btn-lg">DISCOVER MORE</button></a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="picture" src="https://images.unsplash.com/photo-1425421669292-0c3da3b8f529?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80" alt="pic6">
+            <div class="carousel-caption">
+                <h1 class="text display-4">TIES</h1>
+                <h3 class="demo" style="text-transform:uppercase; ">Casual classics that follow your every move</h3>
+                <a href="/Product-Ties.html"><button type="button" class="btn btn-outline-light btn-lg">SHOP NOW</button></a>
+            </div>
+        </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span><i class="fas fa-chevron-left"></i></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span><i class="fas fa-chevron-right"></i></span>
+        </a>
+    </div>
+    <div class="head-text">
+        <h1>VESTONVUX</h1>
+        <p>Discover the outfits and accessories of the Men’s Collection.</p>
+    </div>
+
+    <div class="open-demo1">
+        <div>
+            <div class="start-demo1">
+                <h4>NEW ARRIVALS</h4>
+                <a href="/New.html" class="shop-now1"> Shop Now</a>
+                <div id="demo1" class="carousel slide" data-ride="carousel">
+                    
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="/New/Cashmere Taormina-fit jacket.html">
+                                <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw996c7785/images/zoom/G2NW0TFU2RX_M1217_0.jpg?sw=742&sh=944&sm=fit" alt="">
+                                <p>Cashmere Taormina-fit jacket</p>
+                                <p>$5.160</p>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="/New/Double-breasted linen Taormina-fit suit.html">
+                                <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwd6ba1e3f/images/zoom/GKC2MTFU4JB_B4902_0.jpg?sw=742&sh=944&sm=fit" alt="">
+                                <p>Double-breasted linen Taormina-fit suit</p>
+                                <p>$3.035</p>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="/New/4 cm (16”) silk blade tie.html">
+                                <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw9247aa12/images/zoom/GT142EG0JEI_R0369_1.jpg?sw=742&sh=944&sm=fit" alt="">
+                                <p>4 cm (16”) silk blade tie</p>
+                                <p>$220</p>                        
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="/New/Stretch jacquard casinò-fit tuxedo jacket with patch.html">
+                                <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw2c3f01fc/images/zoom/G2OO3ZFJRD9_N0000_0.jpg?sw=742&sh=944&sm=fit" alt="">
+                                <p>Stretch jacquard casinò-fit tuxedo jacket with patch</p>
+                                <p>$3.290</p>                        
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="/New/Jacquard Martini suit.html">
+                                <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw66ab1c60/images/zoom/GK0RMTHJMI0_W0800_0.jpg?sw=742&sh=944&sm=fit" alt="">
+                                <p>Jacquard Martini suit</p>
+                                <p>$3.325</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+                        <span><i class="fas fa-chevron-left"></i></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo1" data-slide="next">
+                        <span><i class="fas fa-chevron-right"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="end-demo1">
+                <a href="New.html"><img src="https://www.dolcegabbana.com/on/demandware.static/-/Library-Sites-Dolcegabbana/default/dw9bf3545d/homepage/desktop/20200423/A5.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="open-demo1">
+        <div>
+            <div class="start-demo2">
+                <h4>EXCLUSIVE</h4>
+                <a href="New-Blazers.html" class="shop-now1">Discover More</a>
+                <div id="demo2" class="carousel slide" data-ride="carousel">
+                    
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="/New/Corduroy Taormina jacket embroidery.html">
+                                <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwe97c9244/images/zoom/G2OS5ZFUVB2_M0674_0.jpg?sw=742&sh=944&sm=fit" alt="">
+                                <p>Corduroy Taormina jacket embroidery</p>
+                                <p>$2.345</p>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="/Blazers/Stretch_wool_Martini_jacket.html">
+                                <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwd75299cc/images/zoom/G2LK0TGEM19_N0000_0.jpg?sw=742&sh=944&sm=fit" alt="">
+                                <p>Stretch wool Martini jacket</p>
+                                <p>$2.310</p>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="/New/Cotton houndstooth gold-fit jacket.html">
+                                <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwfc79594e/images/zoom/G2LG9TFM6BV_S8030_0.jpg?sw=742&sh=944&sm=fit" alt="">
+                                <p>Cotton houndstooth gold-fit jacket</p>
+                                <p>$1.980</p>                        
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="/Blazers/Velvet_smoking_jacket.html">
+                                <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw3f8c5cb9/images/zoom/G2NY4TFUVG7_N0000_0.jpg?sw=742&sh=944&sm=fit" alt="">
+                                <p>Velvet smoking jacket</p>
+                                <p>$3.455</p>                       
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="/New/Deconstructed double-breasted double wool jacket.html">
+                                <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw69f7eba0/images/zoom/G2OV4THUMJR_S8183_0.jpg?sw=742&sh=944&sm=fit" alt="">
+                                <p>Taormina jacket in wool and silk</p>
+                                <p>$3.455</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+                        <span><i class="fas fa-chevron-left"></i></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo2" data-slide="next">
+                        <span><i class="fas fa-chevron-right"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="end-demo2">
+                <a href="/Product-Blazers.html"><img src="https://dolcegabbana-cdn.thron.com/delivery/public/image/dolcegabbana/fd4f130c-f408-4445-b8a2-ec7a398bc3c1/58t3sh/std/1100x1250/02-widget-c" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider">
+        <div class="slide">
+            <div id="demo3" class="carousel slide" data-ride="carousel">
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="slider-content-container">
+                        <h4 class="demo3">INNOVATED REVOLUTION</h4>
+                        <a href="/Product-Tuxedos.html" class="button-demo3">Explore</a>
+                        <div class="items"> 
+                            <div class="item">
+                                <a href="/Tuxedos/Sicilia jacket in cordonnet lace.HTML">      
+                                    <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw883b39d0/images/zoom/G2MA8THLMD9_N0000_7.jpg?sw=742&sh=944&sm=fit" alt="">
+                                </a> 
+                                <div class="item-text">    
+                                    <p>Wool and silk Martini-fit tuxedo suit</p>
+                                    <p>$4.865</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="/Tuxedos/Lamé jacquard Martini-fit tuxedo suit.html">
+                                    <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwb6c55cb4/images/zoom/GK2WMTFU2Z8_B6712_0.jpg?sw=742&sh=944&sm=fit" alt="">
+                                </a> 
+                                <div class="item-text">    
+                                    <p>Lamé jacquard Martini-fit tuxedo suit</p>
+                                    <p>$4000</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="/Tuxedos/Tuxedo in wool.html">
+                                    <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw73fc5f44/images/zoom/G1IIMTFU2OX_N0000_0.jpg?sw=742&sh=944&sm=fit" alt="">
+                                </a> 
+                                <div class="item-text">    
+                                    <p>Tuxedo in wool</p>
+                                    <p>$4.010</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <a href="/Tuxedos/Casino tuxedo jacket in velvet.html">
+                                    <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw447a00eb/images/zoom/G2LY7TFUVG7_N0000_3.jpg?sw=742&sh=944&sm=fit" alt="">
+                                </a> 
+                                <div class="item-text">    
+                                    <p>Casino tuxedo jacket in velvet</p>
+                                    <p>$2.690</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slider-content-container">
+                            <h4 class="demo3">SHOP THE LOOKS</h4>
+                            <a href="/Product-Giles&Vests.html" class="button-demo3">Shop Now</a>
+                            <div class="items"> 
+                                <div class="item">
+                                    <a href="/Vests/Wool glen plaid vest.html">
+                                        <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw4011280e/images/zoom/G702UTFQ2LQ_S8100_2.jpg?sw=650&sh=830&sm=fit" alt="">
+                                    </a> 
+                                    <div class="item-text">    
+                                        <p>Wool glen plaid vest</p>
+                                        <p>$915</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="/Vests/Five button vest in wool.html">
+                                        <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw33909397/images/zoom/G7349TFUBBG_N0000_4.jpeg?sw=650&sh=830&sm=fit" alt="">
+                                    </a> 
+                                    <div class="item-text">    
+                                        <p>Five button vest in wool</p>
+                                        <p>$475</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="/Vests/Leopard-print jacquard vest.html">
+                                        <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw36ffe3f3/images/zoom/G7961THJMID_HI13N_2.jpg?sw=650&sh=830&sm=fit" alt="">
+                                    </a> 
+                                    <div class="item-text">    
+                                        <p>Leopard-print jacquard vest</p>
+                                        <p>$1.110</p>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slider-content-container">
+                            <h4 class="demo3">THE SELECTION FOR HIM</h4>
+                            <a href="/Product-Tuxedos.html" class="button-demo3">Let's Start</a>
+                            <div class="items"> 
+                                <div class="item">
+                                    <a href="/Tuxedos/Leopard-print jacquard Martini-fit tuxedo jacket.html">
+                                        <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw11b6f5ab/images/zoom/G2LL4THJMID_HI13N_2.jpg?sw=742&sh=944&sm=fit" alt="">
+                                    </a> 
+                                    <div class="item-text">    
+                                        <p>Leopard-print jacquard Martini-fit tuxedo jacket</p>
+                                        <p>$3.360</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="/Tuxedos/Lamé jacquard double-breasted tuxedo suit.html">
+                                        <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwc58f22de/images/zoom/GKDAMTHJMHS_S8350_2.jpg?sw=742&sh=944&sm=fit" alt="">
+                                    </a> 
+                                    <div class="item-text">    
+                                        <p>Lamé jacquard double-breasted tuxedo suit</p>
+                                        <p>$4.945</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="/Tuxedos/Lamé jacquard Martini-fit tuxedo suit (1).html">
+                                        <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwc6bcdd2b/images/zoom/GKCZMTFJOAQ_S8350_2.jpg?sw=742&sh=944&sm=fit" alt="">
+                                    </a> 
+                                    <div class="item-text">    
+                                        <p>Lamé jacquard Martini-fit tuxedo suit</p>
+                                        <p>$4.690</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="/Tuxedos/Wool and silk Martini-fit tuxedo suit.html">
+                                        <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw4fcbabb4/images/zoom/GK2WMTFJMPM_S8036_2.jpg?sw=742&sh=944&sm=fit" alt="">
+                                    </a> 
+                                    <div class="item-text">    
+                                        <p>Wool and silk Martini-fit tuxedo suit</p>
+                                        <p>$4.010</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="slider-content-container">
+                            <h4 class="demo3">SALE SẬP SÀN</h4>
+                            <a href="/Sale.html" class="button-demo3">Get More Information</a>
+                            <div class="items"> 
+                                <div class="item">
+                                    <a href="/Sale/Floral silk jacquard tie.html">
+                                        <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw0d8360dc/images/zoom/GT149EG0JLF_N0000_1.jpg?sw=742&sh=944&sm=fit" alt="">
+                                    </a> 
+                                    <div class="item-text">    
+                                        <p>Floral silk jacquard tie</p>
+                                        <pre><del>$200</del>   $140  (30%)</pre>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="/Sale/Classic Fit Wool Suit.html">
+                                        <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw8c3d7f61/images/zoom/G2PL6TFBEA7_S8051_2.jpg?sw=742&sh=944&sm=fit" alt="">
+                                    </a> 
+                                    <div class="item-text">    
+                                        <p>Classic Fit Wool Suit</p>
+                                        <pre><del>$3.190</del>   $1.914  (40%)</pre>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="/Sale/Silk jacquard tie.html">
+                                        <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw2e5bfdb7/images/zoom/GT149EG0JLC_B0796_1.jpg?sw=742&sh=944&sm=fit" alt="">
+                                    </a> 
+                                    <div class="item-text">    
+                                        <p>Silk jacquard tie</p>
+                                        <pre><del>$200</del>   $160  (20%)</pre>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <a href="/Sale/Zip Panel Wool Silk Tailored Jacket.html">
+                                        <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwba2a800f/images/zoom/G020JZFU4IK_B0011_2.jpg?sw=742&sh=944&sm=fit" alt="">
+                                    </a> 
+                                    <div class="item-text">    
+                                        <p>Zip Panel Wool Silk Tailored Jacket</p>
+                                        <pre><del>$2.990</del>   $2.392  (30%)</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo3" data-slide="prev">
+                  <span><i class="fas fa-chevron-left"></i></span>
+                </a>
+                <a class="carousel-control-next" href="#demo3" data-slide="next">
+                  <span><i class="fas fa-chevron-right"></i></span>
+                </a>
+            </div> 
+        </div>
+    </div>   
+    
+
+    <div class="open-demo1">
+        <div>
+            <div class="start-demo1">
+                <h4>ACCESSORIES</h4>
+                <a href="/Product-Ties.html" class="shop-now1">Shop Now</a>
+                <div id="demo4" class="carousel slide" data-ride="carousel">
+                    
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="/Ties/Tie-design silk jacquard blade tie (6 cm).html">
+                                <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwbcddd919/images/zoom/GT149EG0XBH_N0004_2.jpg?sw=742&sh=944&sm=fit" alt="">
+                                <p>Tie-design silk jacquard blade tie (6 cm)</p>
+                                <p>$200</p>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="/Ties/Diamond-design silk jacquard blade tie (6 cm).html">
+                                <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwf6c51c3b/images/zoom/GT149EG0XBF_N0004_1.jpg?sw=742&sh=944&sm=fit" alt="">
+                                <p>Diamond-design silk jacquard blade tie (6 cm)</p>
+                                <p>$200</p>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="/Ties/6-cm silk blade tie(1).html">
+                                <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwee422a02/images/zoom/GT149EG0JLM_S8351_1.jpg?sw=742&sh=944&sm=fit" alt="">
+                                <p>6-cm silk blade tie</p>
+                                <p>$200</p>                        
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="/Ties/6-cm silk blade tie(2).html">
+                                <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw019be3c1/images/zoom/GT149EG0JLM_S8352_1.jpg?sw=742&sh=944&sm=fit" alt="">
+                                <p>6-cm silk blade tie</p>
+                                <p>$200</p>                        
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="/Ties/Silk jacquard tie (1).html">
+                                <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwfde486cc/images/zoom/GT149EG0JLB_S8350_1.jpg?sw=742&sh=944&sm=fit" alt="">
+                                <p>Silk jacquard tie, blade: 6cm - 23 inches</p>
+                                <p>$200</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo4" data-slide="prev">
+                        <span><i class="fas fa-chevron-left"></i></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo4" data-slide="next">
+                        <span><i class="fas fa-chevron-right"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="end-demo1">
+                <a href="/Product-Ties.html"><img src="/Images/demo3.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="open-demo1">
+        <div>
+            <div class="start-demo2">
+                <h4>READY TO WEAR</h4>
+                <a href="Products.html" class="shop-now1">Discover More</a>
+                <div id="demo5" class="carousel slide" data-ride="carousel">
+                    
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="/Suits/Floral_jacquard_Martini-fit_suit.html">
+                                <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw5d391424/images/zoom/GK3XMTFU3PU_B0387_0.jpg?sw=742&sh=944&sm=fit" alt="">
+                                <p>Floral jacquard Martini-fit suit</p>
+                                <p>$3.015</p>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="/Suits/Virgin_wool_Martini-fit_suit.html">
+                                <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwbe2a256a/images/zoom/GK0EMTFU2RE_B6712_0.jpg?sw=742&sh=944&sm=fit" alt="">
+                                <p>Virgin wool Martini-fit suit</p>
+                                <p>$2.905</p>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="/Suits/Cotton_Taormina-fit_suit_with_jogging_pants.html">
+                                <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwb0c94ae9/images/zoom/GKC6ETGEV01_N0000_0.jpg?sw=742&sh=944&sm=fit" alt="">
+                                <p>Cotton Taormina-fit suit with jogging pants</p>
+                                <p>$3.100</p>                        
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="/Suits/Double-breasted_wool_Martini-fit_suit.html">
+                                <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwd23399b0/images/zoom/GK7SMTFUBEC_N0000_0.jpg?sw=742&sh=944&sm=fit" alt="">
+                                <p>Double-breasted wool Martini-fit suit</p>
+                                <p>$2.650</p>                       
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="/Suits/Wool_mohair_Martini-fit_suit.html">
+                                <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwe3f0bf27/images/zoom/GK0RMTFU21U_F0130_6.jpg?sw=742&sh=944&sm=fit" alt="">
+                                <p>Wool/mohair Martini-fit suit</p>
+                                <p>$2.905</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo5" data-slide="prev">
+                        <span><i class="fas fa-chevron-left"></i></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo5" data-slide="next">
+                        <span><i class="fas fa-chevron-right"></i></span>
+                    </a>
+                </div>
+            </div>
+            <div class="end-demo2">
+                <a href="/Products.html"><img src="https://www.dolcegabbana.com/on/demandware.static/-/Library-Sites-Dolcegabbana/default/dwa1e62454/homepage/desktop/20200423/A3.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <!--NEWLETTER-->
+    <form action="" id="form-send-email">
+        <div>
+            <div class="newletter">
+                <h2 class="text-newletter">newletter</h2>
+                <div class="content-newletter">Join our newsletter to get exclusive contents, offers, services and first access to products.</div>
+                
+                <div class="form-content">
+                    <input type="text" class="inputEmail" id="email" placeholder="  Enter your email address...">
+                    <span class="form-erro"></span>
+                </div>
+                <button class="submit">Submit</button>
+                <br>
+                <br>    
+                <br>
+                <br>
+                <br>
+            </div>
+            <div class="gotop">
+                <a id="mybutton" href="#">
+                    <i class="fas fa-chevron-up" onclick="scrollToTop()" style="color: white;">
+                    </i>
+                </a>
+            </div>
+        </div>
+    </form>
+
+    
+    <!--Footer-->
+    <div>	
+        <div>
+            <div>
+                <h2 class="text-footer">CONTACT US</h2>
+            </div>
+            <div class="social">
+                <a href="https://vi-vn.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/?lang=vi"><i class="fab fa-twitter"></i></a>
+                <a href="https://ads.google.com/intl/vi_vn/getstarted/?subid=vn-vi-ha-awa-bk-c-l00!o3~Cj0KCQjwpreJBhDvARIsAF1_BU0gVty5XnpyxESqt2ekO4PX48hqa7GhxhUliWslavbkWfshDjcpb70aAhLTEALw_wcB~123593086017~kwd-21283811~13984401112~538552239800&gclsrc=aw.ds&gclid=Cj0KCQjwpreJBhDvARIsAF1_BU0gVty5XnpyxESqt2ekO4PX48hqa7GhxhUliWslavbkWfshDjcpb70aAhLTEALw_wcB"><i class="fab fa-google-plus-g"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                <hr style="visibility: hidden;">
+             </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="row item-footer">
+            <div>
+                <hr class="hr-footer">
+                <h5 class="title-footer">NEED HELP?</h5>
+                <hr class="hr-footer">
+				<p>028.3920.7621</p>
+				<p>info@vestonvux.com</p>
+				<p>371 Nguyen Kiem, Ward 3, Go Vap District, HCM city</p>
+            </div>
+            <div>
+                <hr class="hr-footer">
+                <h5 class="title-footer">WORKING HOURS</h5>
+                <hr class="hr-footer">
+                <p>Monday-Friday: 8:00 - 20:00</p>
+				<p>Weekend: 8:00 - 17:00</p>
+            </div>
+            <div>
+                <hr class="hr-footer">
+				<h5 class="title-footer">BECOME A MEMBER</h5>
+				<hr class="hr-footer">
+                <p>Join now and get 10% off your second purchase, and free returns on all online purchases!</p>
+            </div>
+        </div>
+        <div class="copy">
+            <hr class="hr-end">
+                <h5> Copyright &copy; VESTONVUX</h5>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // Mong muốn của chúng ta  
+          Validator({
+            form: '#form-send-email',
+            formGroupSelector: '.form-content',
+            errorSelector: '.form-erro',
+            rules: [
+                Validator.isRequired('#email'),
+                Validator.isEmail('#email', 'Please enter a valid email address.')
+            ],
+            onSubmit: function (data) {
+              // Call API
+              console.log(data);
+            }
+          });
+        });
+  
+      </script>
+</body>
+</html>

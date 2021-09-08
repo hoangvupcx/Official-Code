@@ -1,0 +1,95 @@
+div.header-product {
+    height: 500px;
+    background-image: url(https://images.unsplash.com/photo-1629532599813-141ef98cc1a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    background-size: cover; /* Tự động giãn so với kích thước */
+    background-attachment: fixed; /* Cố định hình */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.header-product > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 75px;
+    background-color: transparent; /* Nền trong suốt*/
+    color: white;
+    font-family: inherit;
+    text-shadow: 5px 5px 15px #000;
+    font-weight: lighter; /* Chữ mỏng*/
+    letter-spacing: 0.125rem;
+}
+.body-product  {
+    width: 32.3%;
+    float: left;
+    display: block;
+    margin-left: 0.7%;
+    margin-top: 7%;
+}
+.line-1 > .body-product {
+    margin-top: 0 !important;
+}
+div.text-product p {
+    font-family: Questrial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0.75px;
+    margin-left: 5%;
+}
+div.text-product pre {
+    font-family: Questrial, sans-serif;
+    font-size: 20px;
+    margin-bottom: 0;
+    letter-spacing: 0.75px;
+    margin-left: 5%;
+    padding: 0;
+    color: black;
+}
+div.text-product p:first-child {
+    margin-top: 3%;
+}
+.line-2, .line-3, .line-4, .line-5, .line-6, .line-7, .line-8, .line-9 {
+    clear: left;
+}
+.end p {
+    font-family: Questrial, sans-serif;
+    text-align: center;
+    clear: left;
+    padding-top: 70px;
+    margin-bottom: 2px;
+    font-size: 20px;
+}
+.end hr {
+    width: 17%;
+    border-top: 2px solid #0e0d0d;
+    margin-top: 0;
+}
+.menu-product > li > a, pre {
+    color: #666;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    letter-spacing: 0;
+    font-family: Questrial, sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.menu-product > li > a:hover {
+    color: black;
+}
+.menu-product {
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 0;
+}
+::-webkit-scrollbar { /* Xóa mép thanh scroll */
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(134, 133, 133);
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(78, 76, 76);
+}
+
+/*--------------MEDIA QUERY--------------*/

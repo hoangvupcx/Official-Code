@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mallanna&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Mallanna&display=swap');
+body {
+    justify-content: center;
+    background-color: #f3f3f3;
+}
+
+div.header-about {
+    height: 500px;
+    background-image: url(https://images.unsplash.com/photo-1537109662156-fade15c5ae8e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+    background-size: cover; /* Tự động giãn so với kích thước */
+    background-attachment: fixed; /* Cố định hình */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.header-about > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 75px;
+    background-color: transparent; /* Nền trong suốt*/
+    color: white;
+    font-family: inherit;
+    text-shadow: 5px 5px 15px #000;
+    font-weight: lighter; /* Chữ mỏng*/
+    letter-spacing: 0.125rem;
+}
+
+.line {
+    visibility: hidden;
+}
+
+.logo-about {
+    text-align: center !important;
+    background: black;
+}
+img {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+.text-final  p {
+    clear: left;
+}
+.hr-about {
+    border-top: 2px solid #0e0d0d;
+    width: 90%;
+}
+div.content > div.text-first  p {
+    margin-left: 51%;
+    padding: 0px 20px;
+    font-family: Questrial, sans-serif;
+    font-size: 20px;
+    text-align: justify; /* Canh đều */
+}
+div.content > div.text-final  p {
+    width: 50%;
+    margin: 30px 0px;
+    padding: 0px 30px;
+    font-family: Questrial, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    float: left;
+}
+.hidden-img1 {
+    display: none;
+    clear: left;
+}
+.hidden-text2 {
+    display: none;
+    font-family: Questrial, sans-serif;
+    font-size: 20px;
+    text-align: justify; /* Canh đều */
+    margin: 0px 3%;
+}
+.hidden-img2 {
+    padding-bottom: 20px;
+}
+div.footer-about {
+    width: 100%;
+    height: 1400px;
+    clear: left;
+    background-image: url(https://www.armani.com/cloud/armstlcasawp/uploads/2018/04/Armani_Casa_Contact_Us_Form2.jpg?impolicy=acom_wp&imdensity=1&cropw=1920);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    clear: left;
+    background-attachment: fixed;
+    max-width: none;
+    position: absolute;
+}
+.fill-in {
+    background-color: white;
+    width: 675px;
+    padding: 60px 0 60px;
+    margin: 110px auto;   
+    position: relative;
+    
+}
+.fill-in h1 {
+    font-size: 1.625rem;
+    line-height: 1.2;
+    letter-spacing: 0.25rem;
+    text-align: center;
+    font-family: Acta Display W01 Book;
+    margin-bottom: 15px;
+}
+.fill-in p {
+    padding: 0px 100px 30px;
+    background-color: #fff;
+    text-align: center;
+    font-family: inherit;
+}
+ .request {
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-size: 1rem;
+    margin: 16px 0;
+    padding-right: 35%;
+    font-family: "AktivGrotesk-Regular";
+}
+.form {
+    text-align: left;
+    width: 100%;
+    margin-left: 25%;
+    margin-right: 25%;
+    
+}
+label{
+    display: block;
+    color: #181818;
+    line-height: 1;
+    font-size: 0.55rem;
+    text-transform: uppercase;
+    letter-spacing: .091em;
+    font-family: "AktivGrotesk-Medium";
+    text-align: left;
+    margin: 20px 0px 6px 0px;
+    width: 100%;
+  
+}
+ul, li, ol {
+    font-family: "AktivGrotesk-Regular";
+    line-height: 1.3;
+    list-style: none;
+}
+select {
+    width: 355px;
+}
+.select_join > select, option {
+    font-family: "AktivGrotesk-Regular";
+    font-size: 0.55rem;
+}
+input[type="text"], input[type="email"], input[type="number"], select {
+    border: 1px solid #181818;
+    height: 45px;
+    letter-spacing: .025rem;
+    border-radius: 2px;
+    font-size: .55rem;
+    width: 50%;
+}
+textarea {
+    border: 1px solid #181818;
+    letter-spacing: .025rem;
+    border-radius: 2px;
+    font-size: .75rem;
+    width: 50% !important;
+}
+form {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    justify-content: left;
+}
+li, .book-appointment {
+    text-align: left;
+    padding: 0;
+}
+.button-about {
+    font-family: "AktivGrotesk-Regular";
+    border-color: #181818;
+    color: #fff;
+    text-transform: none;
+    text-align: left;
+    padding: 0;
+}
+input[type="submit"] {
+    border: 1px solid #181818;
+    height: 30px;
+    width: 80px;
+    letter-spacing: .025rem;
+    border-radius: 2px;
+    font-size: .75rem;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+input[type="submit"]:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black ;
+}
+::-webkit-scrollbar { /* Xóa mép thanh scroll */
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(134, 133, 133);
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(78, 76, 76);
+}
+
+/*----------------Media Query---------------*/
+@media screen and (max-width: 1050px) /*150%*/ {
+    div.header-about {
+        height: 300px;
+    }
+    div.header-about > p {
+        font-size: 60px;
+    }
+    div.content > div.text-first p, div.content > div.text-final p {
+        font-size: 15px;
+    }
+    .fill-in {
+        width: 500px;
+    }
+    div.footer-about {
+        height: 1250px;
+    }
+    .fill-in h1 {
+        font-size: 25px;
+        letter-spacing: 1.25px;
+    }
+    .fill-in p {
+        font-size: 16px;
+        padding: 0 100px 20px;
+    }
+    .request {
+        font-size: 0.75rem;
+    }
+    input[type="text"], input[type="email"], input[type="number"], select {
+        height: 30px;
+        font-size: 10px;
+    }
+    option {
+        font-size: 10px;
+    }
+    label {
+        font-size: 8px;
+    }
+    input[type="submit"] {
+        font-size: 10px;
+        height: 25px;
+        width: 60px;
+    }
+
+}
+@media screen and (max-width: 950px) /*175%*/ {
+    .hidden-img1 {
+        display: block !important;
+    }
+    .fill-in {
+        width: 400px;
+    }
+    div.footer-about {
+        height: 1150px;
+    }
+    .fill-in h1 {
+        font-size: 20px;
+    }
+    .fill-in p {
+        font-size: 12px;
+    }
+    .request {
+        font-size: 0.5rem;
+    }
+    input[type="text"], input[type="email"], input[type="number"], select {
+        height: 25px;
+        font-size: 8px;
+    }
+    option {
+        font-size: 8px;
+    }
+    label {
+        font-size: 6px;
+        margin-top: 15px;
+    }
+    .hr-about {
+        border-top: 1px solid black;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        text-align: center !important;
+    }
+}
+@media screen and (max-width: 750px) /*250%*/ {
+    div.header-about {
+        height: 250px;
+    }
+    div.header-about > p {
+        font-size: 40px;
+    }
+    div.content > div.text-first p, div.content > div.text-final p {
+        font-size: 12px;
+        padding: 0 20px;
+        margin-top: 10px;
+    }
+    input[type="submit"] {
+        font-size: 8px;
+        height: 20px;
+        width: 50px;
+    }
+}
+@media screen and (max-width: 600px) /*300%*/ {
+    div.header-about {
+        height: 200px;
+    }
+    div.header-about > p {
+        font-size: 30px;
+    }
+    .images img:first-child {
+        float: none;
+        width: 100%;
+    }
+    .hidden-img1 {
+        display: none !important;
+    }
+    div.content > div.text-first p{
+        padding: 0px 3% !important;
+        margin: 8px 0px !important;
+        font-size: 8px;
+    }
+    div.text-final p {
+        display: none;
+    }
+    .hidden-img2 {
+        width: 100%;
+        float: none;
+        padding-bottom: 0;
+    }
+    .hidden-text2 {
+        display: block !important;
+        padding-top: 10px;
+        font-size: 8px;
+    }
+    .hidden-text2:last-child {
+        margin-bottom: 20px;
+    }
+    .fill-in {
+        width: 250px;
+        padding-top: 40px;
+        margin: 65px auto;
+    }
+    div.footer-about {
+        height: 750px;
+    }
+    .fill-in h1 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .fill-in p {
+        font-size: 7px;
+        padding: 0 50px 10px;
+    }
+    .request {
+        font-size: 0.35rem;
+        margin: 10px 0;
+    }
+    input[type="text"], input[type="email"], input[type="number"], select {
+        height: 20px;
+        font-size: 6px;
+        border: 0.5px solid black;
+    }option {
+        font-size: 6px;
+    }
+    .message {
+        padding-top: 5px;
+    }
+    textarea {
+        border: 0.5px solid black !important;
+    }
+    label {
+        font-size: 4px;
+        margin-top: 12px;
+        margin-bottom: 0;
+    }
+    input[type="submit"] {
+        font-size: 6px;
+        height: 15px;
+        width: 40px;
+    }
+}
+@media screen and (max-width: 450px) /*400%*/ {
+    .hr-about {
+        border-top: 0.75px solid black;
+        margin-bottom: 0.25rem;
+        margin-top: 0.25rem;
+        text-align: center !important;
+    }
+    div.header-about {
+        height: 150px;
+    }
+    div.header-about > p {
+        font-size: 20px;
+    }
+    div.content > div.text-first p, .hidden-text2 {
+        font-size: 6px;
+        padding-top: 5px;
+    }
+    .hidden-text2:last-child {
+        font-size: 6px;
+        margin-bottom: 30px;
+    }
+    .hidden-img2 {
+        margin-top: 30px;
+    }
+    div.footer-about {
+        height: 750px;
+    }
+    .fill-in {
+        width: 200px;
+        padding-top: 20px;
+        margin: 40px auto;
+    }
+    div.footer-about {
+        height: 550px;
+    }
+    .fill-in h1 {
+        font-size: 8px;
+        margin-bottom: 5px;
+    }
+    .fill-in p {
+        font-size: 5px;
+        padding: 0 50px 5px;
+        margin: 0;
+    }
+    .request {
+        font-size: 0.25rem;
+        margin: 10px 0;
+    }
+    input[type="text"], input[type="email"], input[type="number"], select {
+        height: 15px;
+        font-size: 4px;
+        border: 0.5px solid black;
+    }
+    option {
+        font-size: 4px;
+    }
+    .message {
+        padding-top: 10px;
+    }
+    textarea {
+        border: 0.5px solid black !important;
+    }
+    label {
+        font-size: 3px;
+        margin-top: 8px;
+        margin-bottom: -8px;
+    }
+    input[type="submit"] {
+        font-size: 4px;
+        height: 12px;
+        width: 30px;
+    }
+}

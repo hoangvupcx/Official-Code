@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> 
+    <title>VestonVux | About</title>
+    <link rel="stylesheet" href="/Css/About.css">
+    <link rel="stylesheet" href="/Css/Home.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function checkNumber() {
+                var x = document.getElementById("number").value
+                if(isNaN(x)){
+                    document.getElementById("number").style.border = "1px solid red"
+                }
+                else {
+                    document.getElementById("number").style.border = "none"
+                }
+            }
+            
+        $(document).ready(function() {
+            $(window).scroll(function(event) {
+                var pos_body = $('html,body').scrollTop();
+                if(pos_body>20){
+                    $('.gotop').addClass('hien-ra');
+                }
+                else{
+                    $('.gotop').removeClass('hien-ra');
+                }
+            });
+            $('.gotop').click(function(event) {
+                $('html,body').animate({scrollTop: 0},800);
+            });
+
+            
+        });
+
+        window.onscroll = function() {myFunction()};
+        var header = document.getElementById("header");
+        function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+        }
+
+       /* var timeOut;
+        function scrollToTop() {
+            if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
+                window.scrollBy(0, -50);
+                timeOut = setTimeout('scrollToTop()', 10)
+            }
+            else {
+                clearTimeout(timeOut);
+            }
+        } */
+    </script>
+    <style>
+        .menu li:last-child > a {
+            color: red !important;
+        }
+    </style>
+</head>
+<body>
+    <!--Navigation-->
+    <nav>
+        <ul class="menu">
+            <li class="logo">
+                <a href=""><img src="/Images/b063e54510aa17f2357bdf14637f1bc3d9b58466922ab1f3651ac0dd249882b1-render.png" alt=""></a>
+            </li>
+            <li>
+                <a href="/index.html">HOME</a>
+            </li>
+            <li><a href="/New.html">NEW</a></li>
+            <li><a href="/Sale.html">SALE</a></li>
+            <li><a href="/Products.html">PRODUCTS</a></li>
+            <li><a href="https://goo.gl/maps/tdfj13J3TevS7zUs8">DIRECTION</a></li>
+            <li class="right"><a href="/Contact.html">CONTACT</a></li>
+            <li class="right"><a href="/About.html">ABOUT</a></li>
+        </ul>
+    </nav>
+
+    <!--About-->
+    <div class="header-about">
+        <p>ABOUT US</p>
+    </div>
+    <hr class="hr-about">
+    <div class="about">
+        <div class="edit-carousel">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                </ul>
+            
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://bespokeshop.vn/wp-content/uploads/2017/08/Bespokeshop_Header_01.jpg" alt="Los Angeles">
+                    <div class="carousel-caption">
+                        <h3 class="demo">First of its kind in Vietnam, Vietnam Vestonvux Shop aims to promote menswear tailoring that expresses a mix of elegance, quality and personal style. </h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://bespokeshop.vn/wp-content/uploads/2017/08/Bespokeshop_marling_evans_03.jpg" alt="Chicago">
+                    <div class="carousel-caption">
+                        <h3 class="demo">We are advocators of the Sartorial way of dressing, originating from Europe at the beginning of the 20th century, that’s progressively spread to South Korea, followed by Japan, and that has today expanded throughout the world and is appreciated by many. </h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://bespokeshop.vn/wp-content/uploads/2016/11/bespokeshop_17-medium.jpg" alt="New York">
+                    <div class="carousel-caption">
+                        <h3 class="demo">When promoting the Sartorial lifestyle, it seems indispensable to mention the Vestonvus industry. A vestonvux garment is a creation commissioned to a particular specification. It may be altered or tailored to the measurements, preferences, or usage of an individual purchaser </h3>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://bespokeshop.vn/wp-content/uploads/2017/08/Bespokeshop_Huddersfield-Cloth_02.jpg" alt="New York">
+                    <div class="carousel-caption">
+                        <h3 class="demo">As such, each of our garment is unique and reserved for you only, and we work towards creating products that exuberates elegance but maintains a natural look. Our apparel is a harmonization between luxurious brands, the art of tailoring and the knowledge of fashion.</h3>
+                    </div>
+                </div>
+                </div>
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span><i class="fas fa-chevron-left"></i></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span><i class="fas fa-chevron-right"></i></span>
+                </a>
+            </div>
+            <hr class="hr-about">
+        </div> 
+    <div class="content Navbar-expand-md">
+        <div class="images">
+            <img src="https://images.unsplash.com/photo-1532207733185-fc73ca0a54b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1177&q=80" alt="">
+            <img class="hidden-img1" src="https://www.suitsexpert.com/wp-content/uploads/2019/11/best-suit-brands-cover-1080x675.jpg" alt="">
+            <!--<img class="hidden-img3" src="https://bespokeshop.vn/wp-content/uploads/2020/10/VBS-bespokeshop-Loro-Piana-Wool-Silk-Linen-01-1170x658.jpg" alt="">-->
+        </div>
+        <div class="text-first">
+            <p>Each classic suit requires diligence, from its design, fabrication, to the attention that we put into caring for it after it’s been completed, as we propose premium laundry services and suit repair. </p>
+            <p>A Vestonvux suit is the result of multiple arrangements that allow our tailors to build on top of each fitting, achieving a more precise fit along the way.</p>
+            <p>You may customize it to your liking as vux tailoring offers a free ground for design and creativity. Not only do we offer a selection of the finest fabrics but we also have a wide range of buttons or lining options for you to choose from, among other details.</p>    
+        </div>
+        <div class="text-final">
+            <p class="hidden-text1">If you are interested in arranging a consultation or fitting, please book an appointment beforehand. This method helps our team stay efficient so that we may offer you the highest service quality. For more information, please visit the following section: how to make an appointment?</p>
+        </div>  
+        <div>
+            <img class="hidden-img2" src="https://images.unsplash.com/photo-1481757548536-81a37923e1c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1068&q=80" alt="">
+            <p class="hidden-text2">In order to create what’s most suitable for you, as Sartorialists, we are available for professional advising and styling.</p>
+            <p class="hidden-text2">If you are interested in arranging a consultation or fitting, please book an appointment beforehand. This method helps our team stay efficient so that we may offer you the highest service quality. For more information, please visit the following section: how to make an appointment?</p>
+        </div>
+    </div>
+
+    <!--Book Appointment-->
+    <hr class="hr-about" style="clear: left;">
+    <div class="footer-about"></div>
+        <div class="fill-in">
+            <h1>BOOK AN APPOINTMENT</h1>
+            <p>For more information regarding the VestonVux At Your Home service, please get in touch with us by calling <a href="#">028.3920.7621 </a>or by filling out the following form.</p>
+            <form action="">
+                <div class="form">
+                    <ul class="book-appointment">
+                        <li>
+                            <div><i class="request">* Required Fields</i></div>
+                        </li>
+                        <li>
+                            <label for="">Name*</label>
+                            <div>
+                                <input type="text" required>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">Email*</label>
+                            <div>
+                                <input type="email" required>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">PHONE (INCLUDING INTERNATIONAL COUNTRY-CODE PREFIX)</label>
+                            <div>
+                                <input oninput="checkNumber()" id="number" type="text" required>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">location*</label>
+                            <div>
+                                <select class="select_join" name="" id="" required>
+                                    
+                                        <option>--Select--</option>
+                                        <option value="1" label="">Afganistan</option>
+                                        <option value="Albania" label="Albania"></option>
+                                        <option value="Algeria" label="Algeria"></option>
+                                        <option value="Angola" label="Angola"></option>
+                                        <option value="Argentina" label="Argentina"></option>
+                                        <option value="Australia" label="Australia"></option>
+                                        <option value="Austria" label="Austria"></option>
+                                        <option value="Albania" label="Albania"></option>
+                                        <option value="Bahamas" label="Bahamas"></option>
+                                        <option value="Bangladesh" label="Bangladesh"></option>
+                                        <option value="Bhutan" label="Bhutan"></option>
+                                        <option value="Bermuda" label="Bermuda"></option>
+                                        <option value="Bolivia" label="Bolivia"></option>
+                                        <option value="Brazil" label="Brazil"></option>
+                                        <option value="Bulgaria" label="Bulgaria"></option>
+                                        <option value="Cambodia" label="Cambodia"></option>
+                                        <option value="Canada" label="Canada"></option>
+                                        <option value="Chile" label="Chile"></option>
+                                        <option value="China" label="China"></option>
+                                        <option value="Colombia" label="Colombia"></option>
+                                        <option value="Congo" label="Congo"></option>
+                                        <option value="Costa Rica" label="Costa Rica"></option>
+                                        <option value="Cuba" label="Cuba"></option>
+                                        <option value="Denmark" label="Denmark"></option>
+                                        <option value="Finland" label="Finland"></option>
+                                        <option value="France" label="France"></option>
+                                        <option value="Germany" label="Germany"></option>
+                                        <option value="Greece" label="Greece"></option>
+                                        <option value="Hong Kong" label="Hong Kong"></option>
+                                        <option value="Hungary" label="Hungary"></option>
+                                        <option value="Iceland" label="Iceland"></option>
+                                        <option value="India" label="India"></option>
+                                        <option value="Indonesia" label="Indonesia"></option>
+                                        <option value="Israel" label="Israel"></option>
+                                        <option value="Italy " label="Italy "></option>
+                                        <option value="Iran" label="Iran"></option>
+                                        <option value="Iraq" label="Iraq"></option>
+                                        <option value="Japan" label="Japan"></option>
+                                        <option value="Laos" label="Laos"></option>
+                                        <option value="Liberia" label="Liberia"></option>
+                                        <option value="Luxembourg" label="Luxembourg"></option>
+                                        <option value="Macau" label="Macau"></option>
+                                        <option value="Madagascar" label="Madagascar"></option>
+                                        <option value="Malaysia" label="Malaysia"></option>
+                                        <option value="Maldives" label="Maldives"></option>
+                                        <option value="Marshall Islands" label="Marshall Islands"></option>
+                                        <option value="Mexico" label="Mexico"></option>
+                                        <option value="Mongolia" label="Mongolia"></option>
+                                        <option value="Maroc" label="Maroc"></option>
+                                        <option value="Mozambique" label="Mozambique"></option>
+                                        <option value="Nepal" label="Nepal"></option>
+                                        <option value="Netherlands" label="Netherlands"></option>
+                                        <option value="New Zealand" label="New Zealand"></option>
+                                        <option value="North Korea" label="North Korea"></option>
+                                        <option value="Norway" label="Norway"></option>
+                                        <option value="Pakistan" label="Pakistan"></option>
+                                        <option value="Panama" label="Panama"></option>
+                                        <option value="Paraguay" label="Paraguay"></option>
+                                        <option value="Peru" label="Peru"></option>
+                                        <option value="Philippines" label="Philippines"></option>
+                                        <option value="Poland" label="Poland"></option>
+                                        <option value="Portugal" label="Portugal"></option>
+                                        <option value="Qatar" label="Qatar"></option>
+                                        <option value="Romania" label="Romania"></option>
+                                        <option value="Russia" label="Russia"></option>
+                                        <option value="Samoa" label="Samoa"></option>
+                                        <option value="Saudi Arabia" label="Saudi Arabia"></option>
+                                        <option value="Serbia" label="Serbia"></option>
+                                        <option value="Singapore" label="Singapore"></option>
+                                        <option value="South Africa" label="South Africa"></option>
+                                        <option value="South Korea" label="South Korea"></option>
+                                        <option value="Spain" label="Spain"></option>
+                                        <option value="Sweden" label="Sweden"></option>
+                                        <option value="Switzerland" label="Switzerland"></option>
+                                        <option value="Syria" label="Syria"></option>
+                                        <option value="Taiwan" label="Taiwan"></option>
+                                        <option value="Thailand" label="Thailand"></option>
+                                        <option value="Timor-Leste" label="Timor-Leste"></option>
+                                        <option value="Turkey" label="Turkey"></option>
+                                        <option value="Ukraine" label="Ukraine"></option>
+                                        <option value="UAE" label="UAE"></option>
+                                        <option value="United Kingdom" label="United Kingdom"></option>
+                                        <option value="Uruguay" label="Uruguay"></option>
+                                        <option value="Uzbekistan" label="Uzbekistan"></option>
+                                        <option value="Venezuela" label="Venezuela"></option>
+                                        <option value="Vietnam" label="Vietnam"></option>
+                                        <option value="Yemen" label="Yemen"></option>
+                                    
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">CITY*</label>
+                            <div>
+                                <input type="text" size= required>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">ADDRESS*</label>
+                            <div>
+                                <input type="text" required>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">ZIP CODE*</label>
+                            <div>
+                                <input type="text" required>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">MESSAGE</label>
+                            <div class="message">
+                                <textarea name="" id="message" cols="50%" rows="10">
+                                </textarea>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="button-about"><input type="submit" value="SUBMIT"></ul>
+                </div>
+            </form>
+        </div>  
+    <div class="gotop">
+        <a id="mybutton" href="#">
+            <i class="fas fa-chevron-up" onclick="scrollToTop()" style="color: white;">
+            </i>
+        </a>
+    </div>
+    <br>
+    <!--Footer-->
+    <hr style="visibility:hidden;">
+        <hr class="hr-header">
+        <div class="abc">	
+            <div>
+                <div>
+                    <h2 class="text-footer">CONTACT US</h2>
+                </div>
+                <div class="social">
+                    <a href="https://vi-vn.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/?lang=vi"><i class="fab fa-twitter"></i></a>
+                    <a href="https://ads.google.com/intl/vi_vn/getstarted/?subid=vn-vi-ha-awa-bk-c-l00!o3~Cj0KCQjwpreJBhDvARIsAF1_BU0gVty5XnpyxESqt2ekO4PX48hqa7GhxhUliWslavbkWfshDjcpb70aAhLTEALw_wcB~123593086017~kwd-21283811~13984401112~538552239800&gclsrc=aw.ds&gclid=Cj0KCQjwpreJBhDvARIsAF1_BU0gVty5XnpyxESqt2ekO4PX48hqa7GhxhUliWslavbkWfshDjcpb70aAhLTEALw_wcB"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                    <hr style="visibility: hidden;">
+                </div>
+            </div>
+        </div>
+    <footer class="footer abc">
+        <div class="row item-footer">
+            <div>
+                <hr class="hr-footer">
+                <h5 class="title-footer">NEED HELP?</h5>
+                <hr class="hr-footer">
+				<p>(028) 3920.7621</p>
+				<p>info@vestonvux.com</p>
+				<p>371 Nguyen Kiem, Ward 3, Go Vap District, HCM city</p>
+            </div>
+            <div>
+                <hr class="hr-footer">
+                <h5 class="title-footer">WORKING HOURS</h5>
+                <hr class="hr-footer">
+                <p>Monday-Friday: 8:00 - 20:00</p>
+				<p>Weekend: 8:00 - 17:00</p>
+            </div>
+            <div>
+                <hr class="hr-footer">
+				<h5 class="title-footer">BECOME A MEMBER</h5>
+				<hr class="hr-footer">
+                <p>Join now and get 10% off your second purchase, and free returns on all online purchases!</p>
+            </div>
+        </div>
+        <div class="copy">
+            <hr class="hr-end">
+                <h5> Copyright &copy; VESTONVUX</h5>
+        </div>
+    </footer>
+</body>
+</html>

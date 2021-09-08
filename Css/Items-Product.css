@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+}
+.Detail-product h5 {
+    font-size: 2rem;
+}
+.wrapper {
+    max-width: 100%;
+    margin: 0px auto;
+}
+.menu-details > a,  pre {
+    color: #666;
+    padding: 15px;
+    font-family: Questrial, sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 0;
+    clear: left;
+    
+}
+.menu-details > a:hover {
+    color: black;
+}
+img {
+    width: 38%;
+    float: left;
+    margin-left: 0.7%;
+    margin-top: 0.7%;
+}
+img:first-child, img:nth-child(2) {
+    margin-top: 0 !important;
+}
+
+.Detail-product {
+    clear: left;
+}
+.row1, .row2, .row3  {
+    display: inline-block; /*float:left;*/
+    padding: 0px 35px;
+    margin: 35px 0px;
+    width: 33%;
+    height: 450px;
+    text-align: justify;
+    font-family: Questrial, sans-serif;
+    overflow: auto; /*Tạo thanh cuộn*/
+    background-color: white;
+    z-index: 2;
+}
+h5 {
+    font-weight: 200;
+}
+.box {
+    background-color: rgb(252, 250, 250);
+    width: 100%;
+    clear: left;
+    display: block;
+}
+.select-color, .select-size {
+    width: 48%;
+}
+.select-color > p {
+    border-right: 0.1px rgb(212, 210, 210) solid ;
+    margin-bottom: 0;
+}
+.text-product > div {
+    display: inline-block;
+}
+.accordion-header {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: transparent;
+    padding: 0px 25px;
+    width: 100%;
+    z-index: 0;
+}
+.accordion-items {
+    right: 2%;
+    display: block;
+    position: fixed;
+    top: 16%;
+    width: 20%;
+}
+::-webkit-scrollbar { /* Xóa mép thanh scroll */
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(134, 133, 133);
+    border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(78, 76, 76);
+}
+.header-detail {
+    padding: 0px;
+    font-size: 1.35rem;
+    color: #666;
+}
+
+.more-information {
+    color: #666;
+    text-decoration: underline;
+}
+.more-information:hover {
+    color: black;
+}
+
+/*---------------------New------------------- */
+.new {
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: Questrial, sans-serif;
+    font-size: 20px;
+}
+.new > h3 {
+    padding-top: 10px;
+    margin: 0.5rem;
+    font-size: 50px;
+}
+.collection {
+    font-size: 17px ;
+    padding-top: 0.6rem;
+}
+
+/*------------------Media Query----------------------*/
+@media screen and (max-width: 1450px) /*110%*/ {
+    .accordion {
+        opacity: 0;
+    }
+    .picture-product img {
+        width: 49%;
+    }
+}
+@media screen and (max-width: 1050px) /*150%*/ {
+    .menu-details > a, pre {
+        font-size: 15px;
+        padding: 8px;
+    }
+    .row1, .row2, .row3 {
+        font-size: 12px;
+        margin-bottom:  0px;
+        height: 350px;
+    }  
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    .Detail-product h5 {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 950px) /*175%*/  {
+    .menu-details > a, pre {
+        font-size: 12px;
+    }
+    .row1, .row2, .row3 {
+        font-size: 10px;
+        width: 32.9%;
+        padding: 0 20px;
+        height: 300px;
+    }  
+    .Detail-product h5 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 750px) /*250%*/ {
+    .menu-details > a, pre {
+        font-size: 10px;
+        padding: 6px;
+    }
+    .row1, .row2, .row3 {
+        font-size: 8px;
+        width: 32.7%;
+        padding: 0 18px;
+        height: 370px;
+    }  
+    .Detail-product h5 {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 600px) /*300%*/ {
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
+    .menu-details > a, pre {
+        font-size: 8px;
+        padding: 5px;
+    }
+    .row1, .row2, .row3 {
+        font-size: 6px;
+        width: 32.5%;
+        height: 280px;
+        padding: 0 15px;
+    }  
+    .Detail-product h5 {
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+}
+@media screen and (max-width: 450px) /*400%*/ {
+    .menu-details > a, pre {
+        font-size: 6px;
+        padding: 3px;
+        letter-spacing: 0.5px;
+    }
+    .row1, .row2, .row3 {
+        font-size: 5px;
+        width: 32.3%;
+        height: 230px;
+        padding: 0 10px;
+    }  
+    .Detail-product h5 {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 360px) /*500%*/ {
+    .menu-details > a, pre {
+        font-size: 5px;
+    }
+    .row1, .row2, .row3 {
+        font-size: 4px;
+        width: 32.2%;
+        height: 180px;
+        padding: 0 5px;
+    } 
+    .row1 > div {
+        margin-bottom: 0;
+    } 
+    .Detail-product h5 {
+        font-size: 8px;
+        margin-bottom: 2px;
+    }
+    .Detail-product p:last-child,  .row1 ~ div {
+        margin-bottom: 0.25rem !important;
+    }
+}
