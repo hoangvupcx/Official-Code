@@ -222,7 +222,7 @@ h5 {
 }
 @media screen and (max-width: 750px) /*250%*/ {
     .menu-details > a, pre {
-        font-size: 20px;
+        font-size: 15px;
         padding: 6px;
     }
     .Detail-product {
@@ -244,19 +244,19 @@ h5 {
         width: 3px;
     }
     .menu-details > a, pre {
-        font-size: 20px;
+        font-size: 15px;
         padding: 5px;
     }
 }
 @media screen and (max-width: 450px) /*400%*/ {
     .menu-details > a, pre {
-        font-size: 20px;
+        font-size: 15px;
         padding: 3px;
         letter-spacing: 0.5px;
     }
 }
 @media screen and (max-width: 360px) /*500%*/ {
     .menu-details > a, pre {
-        font-size: 20px;
+        font-size: 15px;
     }
 }
