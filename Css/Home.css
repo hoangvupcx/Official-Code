@@ -898,10 +898,10 @@ div.item-footer p {
     /*-------------------End Footer------------------------*/
 
     .gotop {
-        font-size: 7px;
-        width: 20px;
-        height: 15px;
-        align-items: center;
+        font-size: 20px;
+        width: 60px;
+        border-radius: 45%;
+        height: 50px;
         bottom: 10px;
     }
     ::-webkit-scrollbar {
@@ -1063,14 +1063,7 @@ div.item-footer p {
 
 
 
-    .gotop {
-        font-size: 5px;
-        width: 15px;
-        height: 12px;
-        align-items: center;
-        bottom: 5px;
-        right: 8px;
-    }
+    
     ::-webkit-scrollbar {
         width: 5px;
     }
