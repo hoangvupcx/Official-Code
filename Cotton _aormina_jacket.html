@@ -49,6 +49,12 @@
             $('.gobot').click(function(event) {
                 $('html,body').animate({scrollTop: 2200},800);
             });
+
+            $('.accordion-item1.active .accordion-body1').slideDown();
+            $('.accordion-header1').click(function(){
+                $(this).parent().toggleClass('active');
+                $(this).parent().children('.accordion-body1').slideToggle(); // Từ header tìm về cha (item) rồi đưa về con (body)
+            })
         });
     </script>
     <style>
@@ -90,6 +96,56 @@
                 <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwba8b42b2/images/zoom/G2QG5TFU5GK_B0032_4.jpg?sw=742&sh=944&sm=fit" alt="">
                 <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwcea09f46/images/zoom/G2QG5TFU5GK_B0032_8.jpg?sw=742&sh=944&sm=fit" alt="">
             </div>
+            <div class="product-1 product media">
+                <div id="demo1" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo1" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo1" data-slide-to="1"></li>
+                        <li data-target="#demo1" data-slide-to="2"></li>
+                        <li data-target="#demo1" data-slide-to="3"></li>
+                        <li data-target="#demo1" data-slide-to="4"></li>
+                        <li data-target="#demo1" data-slide-to="5"></li>
+                      </ul>
+                    
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw79a207c8/images/zoom/G2QG5TFU5GK_B0032_0.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwe45f9c39/images/zoom/G2QG5TFU5GK_B0032_1.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw410ae8eb/images/zoom/G2QG5TFU5GK_B0032_2.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw1ad5bf2b/images/zoom/G2QG5TFU5GK_B0032_3.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwba8b42b2/images/zoom/G2QG5TFU5GK_B0032_4.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwcea09f46/images/zoom/G2QG5TFU5GK_B0032_8.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                    </div>
+                    
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+                        <span><i class="fas fa-chevron-left"></i></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo1" data-slide="next">
+                        <span><i class="fas fa-chevron-right"></i></span>
+                    </a>
+                    <a href="./Login.html"><button class="add-to-bag media-add-to-bag">Add to bag</button></a>
+                </div>
+            </div>
+            <div class="text-product media-text-product">
+                <p>Cotton Taormina jacket</p>
+                <p>$2.645</p>
+                <p><i class="fas fa-circle" style="color: rgb(39, 12, 25);"></i> Dark-Purple</p>
+            </div>
         </div>
 
         <!--Description-->
@@ -121,6 +177,52 @@
             </div>
         </div>
 
+        <!-----------------Accordion------------------>
+        <div class="cover">
+            <div class="accordion1">
+                <div class="accordion-item1 active">
+                    <div class="accordion-header1">
+                        <h3>Description</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body1">
+                        <div style="margin-bottom: 15px;">
+                            The Flower theme that is part of the Giardini All’italiana collection surrounds us with the beauty of a garden lush with endless nuances and a variety of flowers and colors that merge with the iconic black and white polka-dot and leopard prints. Stefano and Domenico bring together the natural world with its wonderful colors and shapes and our signature aesthetic, to present a colorful, unique, and vibrant closet made up of shirts, sweatshirts, pants, jackets and suits where spring breaks through with all the beauty of a blooming garden. A real tribute to nature, joy and a desire to be outdoors.                
+                        </div>
+                        <div>Cotton Taormina jacket:</div>
+                        <li>Regular fit</li>
+                        <li>Peak lapels</li>
+                        <li>Two-button-fastening at the front</li>
+                        <li> Front pockets and breast pocket</li>
+                        <li>Two welt pockets on the interior</li>
+                        <li>Lined</li>
+                        <li>The piece measures 75 cm - 29.5 inches from the rear collar seam on a size IT 48</li>
+                        <li>The model is 185 cm - 72.8 inches tall and wears a size IT 48</li>
+                        <li>Made in Italy</li>
+                    </div>
+                </div>
+                <div class="accordion-item1">
+                    <div class="accordion-header1">
+                        <h3>Care And Details</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body1">
+                        <p style="margin-bottom: 0;">External composition: 100% Cotton</p>
+                    </div>
+                </div>
+                <div class="accordion-item1">
+                    <div class="accordion-header1">
+                        <h3>Shipping & Returns</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body1">
+                        <p>Delivery and returns are always free on all orders. Standard delivery takes place approximately within 3-4 working days (5-6 working days in selected countries) from the moment in which the order leaves the warehouse. All orders are processed Monday to Friday, excluding holidays. More detailed information will be provided during the purchasing process.</p>
+                        <p>We remind you that this information does not apply in the case of pre-orders or personalized items, for which you will find information on returns and delivery times in the respective product data sheets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!--Scroll Top-->
         <div class="gotop">
             <a id="mybutton" href="#">
@@ -129,7 +231,7 @@
             </a>
         </div>
 
-        <!--Accordion-->
+        
         <div class="accordion">
             <div class="accordion-items active">
                 <div class="accordion-header"></div>
@@ -158,7 +260,6 @@
     </div>
 
      <!--Footer-->
-     <hr class="hr-header">
     <div>	
         <div>
             <div>

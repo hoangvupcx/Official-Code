@@ -110,6 +110,7 @@ h5 {
 /*------------------Accordion----------------------*/
 .accordion1 {
     clear: left;
+    display: none;
 }
 .accordion-header1 {
     font-family: Questrial, sans-serif;
@@ -179,6 +180,9 @@ h5 {
     display: none;
     font-size: 16px !important;
 }
+div.text-product pre {
+    font-size: 16px;
+}
 
 /*------------------Media Query----------------------*/
 @media screen and (max-width: 1450px) /*110%*/ {
@@ -237,6 +241,9 @@ h5 {
      .media-add-to-bag {
         font-size: 15px;
         height: 30px;
+    }
+    .accordion1 {
+        display: block;
     }
 }
 @media screen and (max-width: 600px) /*300%*/ {
