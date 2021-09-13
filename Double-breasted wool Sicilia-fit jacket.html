@@ -40,8 +40,6 @@
                 }
             });
 
-            
-
             $('.gotop').click(function(event) {
                 $('html,body').animate({scrollTop: 0},800);
             });
@@ -49,11 +47,21 @@
             $('.gobot').click(function(event) {
                 $('html,body').animate({scrollTop: 3000},800);
             });
+
+            $('.accordion-item1.active .accordion-body1').slideDown();
+            $('.accordion-header1').click(function(){
+                $(this).parent().toggleClass('active');
+                $(this).parent().children('.accordion-body1').slideToggle(); // Từ header tìm về cha (item) rồi đưa về con (body)
+            }) 
         });
     </script>
     <style>
         .menu li:nth-child(3) > a {
             color: red !important;
+        }
+        *{
+            margin: 0;
+            padding: 0;
         }
     </style>
 </head>
@@ -91,7 +99,6 @@
                 <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwf84cb3f2/images/zoom/G2PL1TFU3LS_N0000_5.jpg?sw=742&sh=944&sm=fit" alt="">
                 <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwa59e2a8a/images/zoom/G2PL1TFU3LS_N0000_8.jpg?sw=742&sh=944&sm=fit" alt="">
             </div>
-            <a href="./Wool_Martini-fit_suit.html">
                 <div class="product-1 product media">
                     <div id="demo1" class="carousel slide" data-ride="carousel">
 
@@ -138,14 +145,13 @@
                         <a class="carousel-control-next" href="#demo1" data-slide="next">
                             <span><i class="fas fa-chevron-right"></i></span>
                         </a>
-                        <a href="./Login.html"><button class="add-to-bag">Add to bag</button></a>
+                        <a href="./Login.html"><button class="add-to-bag media-add-to-bag">Add to bag</button></a>
                     </div>
                 </div>
                 <div class="text-product media-text-product">
                     <p>Double-breasted wool Sicilia-fit jacket</p>
                     <p>$3.745</p>
                 </div>
-            </a> 
         </div>
 
         <!--Description-->
@@ -177,6 +183,53 @@
                 <h5>Shipping & Returns</h5>
                 <p>Delivery and returns are always free on all orders. Standard delivery takes place approximately within 3-4 working days (5-6 working days in selected countries) from the moment in which the order leaves the warehouse. All orders are processed Monday to Friday, excluding holidays. More detailed information will be provided during the purchasing process.</p>
                 <p>We remind you that this information does not apply in the case of pre-orders or personalized items, for which you will find information on returns and delivery times in the respective product data sheets.</p>
+            </div>
+        </div>
+
+        <!--Accordion-->
+        <div class="cover">
+            <div class="accordion1">
+                <div class="accordion-item1 active">
+                    <div class="accordion-header1">
+                        <h3>Description</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body1">
+                        <div style="margin-bottom: 15px;">
+                            In the VestonVux collection, our Sicilian roots and tailoring expertise mix with layering and new volume to create a sophisticated and contemporary update on our signature aesthetic.
+                        </div>
+                        <div>Double-breasted wool jacket with polka-dot silk twill details and lining:</div>
+                        <li>Regular fit</li>
+                        <li>Peak lapels</li>
+                        <li>Six-button fastening at the front</li>
+                        <li>Front flap pockets and a breast pocket</li>
+                        <li>Two inner pockets with buttons</li>
+                        <li>Buttoned cuffs </li>
+                        <li>Printed lining</li>
+                        <li>The piece measures 73.5 cm - 28.9 inches from the rear collar seam on a size IT 48</li>
+                        <li>The model is 185 cm - 72.8 inches tall and wears a size IT 48</li>
+                        <li>Made in Italy</li>
+                    </div>
+                </div>
+                <div class="accordion-item1">
+                    <div class="accordion-header1">
+                        <h3>Care And Details</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body1">
+                        <p>External composition: 80% Wool 20% Silk</p>
+                    </div>
+                </div>
+                <div class="accordion-item1">
+                    <div class="accordion-header1">
+                        <h3>Shipping & Returns</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body1">
+                        <p>Delivery and returns are always free on all orders. Standard delivery takes place approximately within 3-4 working days (5-6 working days in selected countries) from the moment in which the order leaves the warehouse. All orders are processed Monday to Friday, excluding holidays. More detailed information will be provided during the purchasing process.</p>
+                        <p>We remind you that this information does not apply in the case of pre-orders or personalized items, for which you will find information on returns and delivery times in the respective product data sheets.</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -218,7 +271,6 @@
     </div>
 
      <!--Footer-->
-     <hr class="hr-header">
     <div>	
         <div>
             <div>

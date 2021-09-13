@@ -812,10 +812,6 @@ div.item-footer p {
         font-size: 50%;
         letter-spacing: 0.25px;
     }
-    .add-to-bag {
-        font-size: 50%;
-        height: 20px;
-    }
     p.collection {
         padding-top: 5px;
     }
@@ -830,9 +826,9 @@ div.item-footer p {
         font-size:  30px;
     }
     .carousel-control-prev, .carousel-control-next {
-        font-size: 35%;
-        width: 15px;
-        height: 15px;
+        font-size: 60%;
+        width: 25px;
+        height: 25px;
     }
     .carousel-indicators li {
         width: 15px;
@@ -999,10 +995,6 @@ div.item-footer p {
         font-size: 35%;
         letter-spacing: 0.25px;
     }
-    .add-to-bag {
-        font-size: 40%;
-        height: 15px;
-    }
     p.collection {
         padding-top: 5px;
     }
@@ -1015,11 +1007,6 @@ div.item-footer p {
     }
     .new > h3 {
         font-size: 25px;
-    }
-    .carousel-control-prev, .carousel-control-next {
-        font-size: 28%;
-        width: 12px;
-        height: 12px;
     }
     .carousel-indicators li {
         width: 25px;
@@ -1149,10 +1136,6 @@ div.item-footer p {
     .head-text p, .carousel-inner p {
         font-size: 5px;
     }
-    .add-to-bag {
-        font-size: 30%;
-        height: 12px;
-    }
     .item-text pre {
         padding: 0px;
         font-size: 5px;
@@ -1253,10 +1236,6 @@ div.item-footer p {
     .carousel-caption h1{
 		font-size: 1rem;
 	}
-    .add-to-bag {
-        font-size: 25%;
-        height: 10px;
-    }
 	.carousel-caption h3.demo{		
 		font-size: 5px;	
         letter-spacing: 0.5px;

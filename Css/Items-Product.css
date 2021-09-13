@@ -106,6 +106,53 @@ h5 {
     color: black;
 }
 
+
+/*------------------Accordion----------------------*/
+.accordion-header1 {
+    font-family: Questrial, sans-serif;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #1a1919;
+    display: flex;
+    cursor: pointer;
+}
+.accordion-header1 h3 {
+    font-size: 18px !important;
+    margin: 0;
+}
+.accordion-header1 i {
+    margin-left: auto;
+}
+.accordion-item1:last-child {
+    margin-bottom: 30px;
+}
+.accordion-item1:first-child {
+    margin-top: 30px;
+}
+.accordion-item1.active .accordion-header1 {
+    background-color: #f3f3f3;
+    border-bottom: none;
+}
+.accordion-item1.active .arrow {
+    transform: rotate(180deg);
+}
+.arrow {
+    transition: all 0.3s;
+}
+.accordion-body1 {
+    text-align: justify;
+    font-family: Questrial, sans-serif;
+    font-size: 15px;
+    padding: 20px 30px;
+    display: none;
+    border-bottom: 1px solid #1a1919;
+}
+
+
+
+
+
 /*---------------------New------------------- */
 .new {
     text-align: center;
@@ -172,17 +219,11 @@ h5 {
 }
 @media screen and (max-width: 750px) /*250%*/ {
     .menu-details > a, pre {
-        font-size: 10px;
+        font-size: 15px;
         padding: 6px;
     }
-    .row1, .row2, .row3 {
-        font-size: 12px;
-        width: 32.7%;
-        padding: 0 18px;
-        height: 500px;
-    }  
-    .Detail-product h5 {
-        font-size: 15px;
+    .Detail-product {
+        display: none;
     }
     .picture-product img {
         display: none;
@@ -190,8 +231,9 @@ h5 {
     .media .carousel-inner img, .media-text-product p {
         display: block;
     }
-    div.text-product p {
+    div.text-product p, .media-add-to-bag {
         font-size: 15px;
+        height: 30px;
     }
 }
 @media screen and (max-width: 600px) /*300%*/ {
@@ -202,16 +244,6 @@ h5 {
         font-size: 8px;
         padding: 5px;
     }
-    .row1, .row2, .row3 {
-        font-size: 6px;
-        width: 32.5%;
-        height: 280px;
-        padding: 0 15px;
-    }  
-    .Detail-product h5 {
-        font-size: 12px;
-        margin-bottom: 3px;
-    }
 }
 @media screen and (max-width: 450px) /*400%*/ {
     .menu-details > a, pre {
@@ -219,34 +251,9 @@ h5 {
         padding: 3px;
         letter-spacing: 0.5px;
     }
-    .row1, .row2, .row3 {
-        font-size: 5px;
-        width: 32.3%;
-        height: 230px;
-        padding: 0 10px;
-    }  
-    .Detail-product h5 {
-        font-size: 10px;
-    }
 }
 @media screen and (max-width: 360px) /*500%*/ {
     .menu-details > a, pre {
         font-size: 5px;
-    }
-    .row1, .row2, .row3 {
-        font-size: 4px;
-        width: 32.2%;
-        height: 180px;
-        padding: 0 5px;
-    } 
-    .row1 > div {
-        margin-bottom: 0;
-    } 
-    .Detail-product h5 {
-        font-size: 8px;
-        margin-bottom: 2px;
-    }
-    .Detail-product p:last-child,  .row1 ~ div {
-        margin-bottom: 0.25rem !important;
     }
 }
