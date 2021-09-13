@@ -208,6 +208,7 @@ li.first {
     border: none;
     font-family: 'Questrial', sans-serif; 
     opacity: 0;
+    cursor: pointer;
 }
 
 

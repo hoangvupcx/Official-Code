@@ -32,6 +32,9 @@ img:first-child, img:nth-child(2) {
     margin-top: 0 !important;
 }
 
+div.text-product pre {
+    font-size: 16px;
+}
 .Detail-product {
     clear: left;
 }
@@ -112,6 +115,9 @@ h5 {
     clear: left;
     display: none;
 }
+.first {
+    border-top: 1px solid #1a1919;
+}
 .accordion-header1 {
     font-family: Questrial, sans-serif;
     justify-content: left;
@@ -180,9 +186,6 @@ h5 {
     display: none;
     font-size: 16px !important;
 }
-div.text-product pre {
-    font-size: 16px;
-}
 
 /*------------------Media Query----------------------*/
 @media screen and (max-width: 1450px) /*110%*/ {
@@ -244,6 +247,11 @@ div.text-product pre {
     }
     .accordion1 {
         display: block;
+    }
+    .carousel-control-prev,
+    .carousel-control-next, 
+    .add-to-bag {
+        opacity: 1 !important;
     }
 }
 @media screen and (max-width: 600px) /*300%*/ {
