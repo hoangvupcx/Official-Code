@@ -46,6 +46,12 @@
             $('.gobot').click(function(event) {
                 $('html,body').animate({scrollTop: 3000},800);
             });
+
+            $('.accordion-item1.active .accordion-body1').slideDown();
+            $('.accordion-header1').click(function(){
+                $(this).parent().toggleClass('active');
+                $(this).parent().children('.accordion-body1').slideToggle(); // Từ header tìm về cha (item) rồi đưa về con (body)
+            })
         });
     </script>
     <style>
@@ -56,7 +62,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <!--Navigation-->
+        <!-----------------Navigation---------------->
         <nav>
             <ul class="menu">
                 <li class="logo">
@@ -74,7 +80,7 @@
             </ul>
         </nav>
 
-        <!--Details-->
+        <!---------------------Details------------------>
         <div>
             <pre class="menu-details"><a href="./Products.html">Products</a> > <a href="./Products.html">Suits</a> >  Wool Sicilia-fit suit - $3.870</pre>
         </div>
@@ -89,9 +95,67 @@
                 <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw218e4c9c/images/zoom/GKATMTFUBEG_N0000_6.jpg?sw=742&sh=944&sm=fit" alt="">
                 <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw140d0ba7/images/zoom/GKATMTFUBEG_N0000_7.jpg?sw=742&sh=944&sm=fit" alt="">
             </div>
+            <div class="product-1 product media">
+                <div id="demo1" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo1" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo1" data-slide-to="1"></li>
+                        <li data-target="#demo1" data-slide-to="2"></li>
+                        <li data-target="#demo1" data-slide-to="3"></li>
+                        <li data-target="#demo1" data-slide-to="4"></li>
+                        <li data-target="#demo1" data-slide-to="5"></li>
+                        <li data-target="#demo1" data-slide-to="6"></li>
+                        <li data-target="#demo1" data-slide-to="7"></li>
+                      </ul>
+                    
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwdaf433ab/images/zoom/GKATMTFUBEG_N0000_0.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw111cba09/images/zoom/GKATMTFUBEG_N0000_1.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw8e894531/images/zoom/GKATMTFUBEG_N0000_2.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwb41793e2/images/zoom/GKATMTFUBEG_N0000_3.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw001c33b2/images/zoom/GKATMTFUBEG_N0000_4.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwa778e059/images/zoom/GKATMTFUBEG_N0000_5.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw218e4c9c/images/zoom/GKATMTFUBEG_N0000_6.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw140d0ba7/images/zoom/GKATMTFUBEG_N0000_7.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                    </div>
+                    
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+                        <span><i class="fas fa-chevron-left"></i></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo1" data-slide="next">
+                        <span><i class="fas fa-chevron-right"></i></span>
+                    </a>
+                    <a href="./Login.html"><button class="add-to-bag media-add-to-bag">Add to bag</button></a>
+                </div>
+            </div>
+            <div class="text-product media-text-product">
+                <p>Wool Sicilia-fit suit</p>
+                <p>$3.870</p>
+                <p><i class="fas fa-circle" style="color: black;"></i> Black</p>
+            </div>
         </div>
 
-        <!--Description-->
+        <!----------------Description--------------->
         <div class="Detail-product"> 
             <div class="row1">
                 <h5>Description</h5>
@@ -121,7 +185,54 @@
             </div>
         </div>
 
-        <!--Scroll Top-->
+        <!-----------------Accordion------------------>
+        <div class="cover">
+            <div class="accordion1">
+                <div class="accordion-item1 active">
+                    <div class="accordion-header1">
+                        <h3>Description</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body1">
+                        <div style="margin-bottom: 15px;">
+                            In the VestonVux collection, our Sicilian roots and tailoring expertise mix with layering and new volume to create a sophisticated and contemporary update on our signature aesthetic.
+                        </div>
+                        <div>Tailored three-piece wool suit:</div>
+                        <li>Slim Sicilia fit</li>
+                        <li>Jacket with peak lapels, flap pockets and a breast pocket</li>
+                        <li>Single-breasted fastening with a single button, a lined interior and three inner pockets</li>
+                        <li>V-neck vest with four buttons</li>
+                        <li>Pants with front slant pockets and rear buttoned welt pockets</li>
+                        <li>The jacket measures 73.5 cm - 28.9 inches from the back collar seam on a size IT 48</li>
+                        <li>The crotch measures 17.5 cm - 6.9 inches and the hem is 17.5 cm - 6.9 inches wide on a size IT 48</li>
+                        <li>The model is 185 cm - 72.8 inches tall and wears a size IT 48</li>
+                        <li>Made in Italy</li>
+                    </div>
+                </div>
+                <div class="accordion-item1">
+                    <div class="accordion-header1">
+                        <h3>Care And Details</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body1">
+                        <p style="margin-bottom: 0;">External composition: 100% Virgin Wool</p>
+                        <p>Internal composition: 100% Silk</p>
+                    </div>
+                </div>
+                <div class="accordion-item1">
+                    <div class="accordion-header1">
+                        <h3>Shipping & Returns</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body1">
+                        <p>Delivery and returns are always free on all orders. Standard delivery takes place approximately within 3-4 working days (5-6 working days in selected countries) from the moment in which the order leaves the warehouse. All orders are processed Monday to Friday, excluding holidays. More detailed information will be provided during the purchasing process.</p>
+                        <p>We remind you that this information does not apply in the case of pre-orders or personalized items, for which you will find information on returns and delivery times in the respective product data sheets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------Scroll Top--------------->
         <div class="gotop">
             <a id="mybutton" href="#">
                 <i class="fas fa-chevron-up"  style="color: white;">
@@ -159,7 +270,7 @@
         </div>
     </div>
 
-     <!--Footer-->
+     <!----------------Footer--------------->
      <hr class="hr-header">
     <div>	
         <div>

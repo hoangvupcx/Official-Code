@@ -46,6 +46,12 @@
             $('.gobot').click(function(event) {
                 $('html,body').animate({scrollTop: 2350},800);
             });
+
+            $('.accordion-item1.active .accordion-body1').slideDown();
+            $('.accordion-header1').click(function(){
+                $(this).parent().toggleClass('active');
+                $(this).parent().children('.accordion-body1').slideToggle(); // Từ header tìm về cha (item) rồi đưa về con (body)
+            })
         });
     </script>
     <style>
@@ -56,7 +62,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <!--Navigation-->
+        <!-----------------Navigation---------------->
         <nav>
             <ul class="menu">
                 <li class="logo">
@@ -74,7 +80,7 @@
             </ul>
         </nav>
 
-        <!--Details-->
+        <!---------------------Details------------------>
         <div>
             <pre class="menu-details"><a href="./Sale.html">Sale</a> >  Slim Fit Technical Wool Tailored Jacket - $1.953</pre>
         </div>
@@ -87,9 +93,59 @@
                 <img src="https://assets.burberry.com/is/image/Burberryltd/5EED5874-0D6C-4B48-87E0-08A83BAB485D.jpg?$BBY_V2_ML_1x1$&wid=1500&hei=1500" alt="">
                 <img src="https://assets.burberry.com/is/image/Burberryltd/EDDDA35F-B1EB-4572-9140-8DF758493F12.jpg?$BBY_V2_ML_1x1$&wid=1500&hei=1500" alt="">
             </div>
+            <div class="product-1 product media">
+                <div id="demo1" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo1" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo1" data-slide-to="1"></li>
+                        <li data-target="#demo1" data-slide-to="2"></li>
+                        <li data-target="#demo1" data-slide-to="3"></li>
+                        <li data-target="#demo1" data-slide-to="4"></li>
+                        <li data-target="#demo1" data-slide-to="5"></li>
+                      </ul>
+                    
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://assets.burberry.com/is/image/Burberryltd/3504304E-0D97-499B-B561-049A6295266A.jpg?$BBY_V2_ML_1x1$&wid=1500&hei=1500" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://assets.burberry.com/is/image/Burberryltd/8F752D88-90DB-4D1B-8213-5D787C1146C2.jpg?$BBY_V2_ML_1x1$&wid=1500&hei=1500" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://assets.burberry.com/is/image/Burberryltd/618430A3-9127-4328-BABD-2EC1466CB299.jpg?$BBY_V2_ML_1x1$&wid=1500&hei=1500" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://assets.burberry.com/is/image/Burberryltd/AF69DB83-4558-42E1-974A-CDF97F0C4A78.jpg?$BBY_V2_SL_1x1$&wid=1500&hei=1500" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://assets.burberry.com/is/image/Burberryltd/5EED5874-0D6C-4B48-87E0-08A83BAB485D.jpg?$BBY_V2_ML_1x1$&wid=1500&hei=1500" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://assets.burberry.com/is/image/Burberryltd/EDDDA35F-B1EB-4572-9140-8DF758493F12.jpg?$BBY_V2_ML_1x1$&wid=1500&hei=1500" alt="">
+                        </div>
+                    </div>
+                    
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+                        <span><i class="fas fa-chevron-left"></i></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo1" data-slide="next">
+                        <span><i class="fas fa-chevron-right"></i></span>
+                    </a>
+                    <a href="./Login.html"><button class="add-to-bag media-add-to-bag">Add to bag</button></a>
+                </div>
+            </div>
+            <div class="text-product media-text-product">
+                <p>Slim Fit Technical Wool Tailored Jacket</p>
+                <pre><del>$2.790 </del>  $1.953  (30%)</pre>
+                <p><i class="fas fa-circle" style="color: black;"></i> Black</p>
+            </div>
         </div>
 
-        <!--Description-->
+        <!----------------Description--------------->
         <div class="Detail-product"> 
             <div class="row1">
                 <h5>Description</h5>
@@ -121,7 +177,54 @@
             </div>
         </div>
 
-        <!--Scroll Top-->
+        <!-----------------Accordion------------------>
+        <div class="cover">
+            <div class="accordion1">
+                <div class="accordion-item1 active">
+                    <div class="accordion-header1">
+                        <h3>Description</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body1">
+                        <div style="margin-bottom: 15px;">
+                            An Italian-tailored jacket in technical wool twill, cut to a slim fit. The design is shaped with an unstructured shoulder and has a half-canvas construction for a defined chest and soft lapel roll. The piece forms part of our Future Heritage collection, a modern capsule of elevated essentials.
+                        </div>
+                        <li>Slim fit</li>
+                        <li>Jacket length: 74cm/29.1in. This is based on a size IT 50 as proportions change slightly according to size.</li>
+                        <li>Model’s height: 186cm/6ft 1in. Model wears size IT 50.</li>
+                        <li>Lining: 100% cupro</li>
+                        <li>Buttons: buffalo horn</li>
+                        <li>Single-breasted closure, notch lapels, hand-stitched buttonhole on lapel, chest welt pocket, flap pockets, interior button-through welt pockets, working cuffs, single vent</li>
+                        <li>Regular rise, concealed hook-and-bar, button and zip fly closure, side slip pockets, back button-through welt pockets</li>
+                        <li>Specialist dry clean</li>
+                        <li>Made in Italy</li>
+                    </div>
+                </div>
+                <div class="accordion-item1">
+                    <div class="accordion-header1">
+                        <h3>Care And Details</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body1">
+                        <p style="margin-bottom: 0;">Outer: 71% wool, 29% polyamide</p>
+                        <p style="margin-bottom: 0;">Sleeve lining: 100% cupro</p>
+                        <p>Undercollar: 52% linen, 30% wool, 18% viscose</p>
+                    </div>
+                </div>
+                <div class="accordion-item1">
+                    <div class="accordion-header1">
+                        <h3>Shipping & Returns</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body1">
+                        <p>Delivery and returns are always free on all orders. Standard delivery takes place approximately within 3-4 working days (5-6 working days in selected countries) from the moment in which the order leaves the warehouse. All orders are processed Monday to Friday, excluding holidays. More detailed information will be provided during the purchasing process.</p>
+                        <p>We remind you that this information does not apply in the case of pre-orders or personalized items, for which you will find information on returns and delivery times in the respective product data sheets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------Scroll Top--------------->
         <div class="gotop">
             <a id="mybutton" href="#">
                 <i class="fas fa-chevron-up"  style="color: white;">
@@ -159,8 +262,7 @@
         </div>
     </div>
 
-     <!--Footer-->
-     <hr class="hr-header">
+     <!----------------Footer--------------->
     <div>	
         <div>
             <div>

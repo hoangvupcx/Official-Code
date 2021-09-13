@@ -49,6 +49,12 @@
             $('.gobot').click(function(event) {
                 $('html,body').animate({scrollTop: 3000},800);
             });
+
+            $('.accordion-item1.active .accordion-body1').slideDown();
+            $('.accordion-header1').click(function(){
+                $(this).parent().toggleClass('active');
+                $(this).parent().children('.accordion-body1').slideToggle(); // Từ header tìm về cha (item) rồi đưa về con (body)
+            })
         });
     </script>
     <style>
@@ -59,7 +65,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <!--Navigation-->
+        <!-----------------Navigation---------------->
         <nav>
             <ul class="menu">
                 <li class="logo">
@@ -77,7 +83,7 @@
             </ul>
         </nav>
 
-        <!--Details-->
+        <!---------------------Details------------------>
         <div>
             <pre class="menu-details"><a href="./New.html">New</a> >  Jacquard Martini suit - $3.325</pre>
         </div>
@@ -92,9 +98,67 @@
                 <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwc8285214/images/zoom/GK0RMTHJMI0_W0800_6.jpg?sw=742&sh=944&sm=fit" alt="">
                 <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwb8e3474c/images/zoom/GK0RMTHJMI0_W0800_7.jpg?sw=742&sh=944&sm=fit" alt="">
             </div>
+            <div class="product-1 product media">
+                <div id="demo1" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo1" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo1" data-slide-to="1"></li>
+                        <li data-target="#demo1" data-slide-to="2"></li>
+                        <li data-target="#demo1" data-slide-to="3"></li>
+                        <li data-target="#demo1" data-slide-to="4"></li>
+                        <li data-target="#demo1" data-slide-to="5"></li>
+                        <li data-target="#demo1" data-slide-to="6"></li>
+                        <li data-target="#demo1" data-slide-to="7"></li>
+                      </ul>
+                    
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw66ab1c60/images/zoom/GK0RMTHJMI0_W0800_0.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw509593c4/images/zoom/GK0RMTHJMI0_W0800_1.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw862b4a7e/images/zoom/GK0RMTHJMI0_W0800_2.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwbedade29/images/zoom/GK0RMTHJMI0_W0800_3.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwb251f9ce/images/zoom/GK0RMTHJMI0_W0800_4.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwc7b9904c/images/zoom/GK0RMTHJMI0_W0800_5.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwc8285214/images/zoom/GK0RMTHJMI0_W0800_6.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwb8e3474c/images/zoom/GK0RMTHJMI0_W0800_7.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                    </div>
+                    
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+                        <span><i class="fas fa-chevron-left"></i></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo1" data-slide="next">
+                        <span><i class="fas fa-chevron-right"></i></span>
+                    </a>
+                    <a href="./Login.html"><button class="add-to-bag media-add-to-bag">Add to bag</button></a>
+                </div>
+            </div>
+            <div class="text-product media-text-product">
+                <p>Jacquard Martini suit</p>
+                <p>$3.325</p>
+                <p><i class="fas fa-circle" style="color: white; border: 1px solid rgb(187, 187, 187); border-radius: 50%;"></i> White</p>
+            </div>
         </div>
 
-        <!--Description-->
+        <!----------------Description--------------->
         <div class="Detail-product"> 
             <div class="row1">
                 <h5>Description</h5>
@@ -126,7 +190,53 @@
             </div>
         </div>
 
-        <!--Scroll Top-->
+        <!-----------------Accordion------------------>
+        <div class="cover">
+            <div class="accordion1">
+                <div class="accordion-item1 active">
+                    <div class="accordion-header1">
+                        <h3>Description</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body1">
+                        <div style="margin-bottom: 15px;">
+                            In the DNA collection, the attention to detail makes all the difference. Iconic models are renewed with new proportions to look at the new generations and their way of living traditions.
+                        </div>
+                        <div>Elegant two piece suit. The tailored construction and the preciousness of the jacquard fabric make the piece incredibly unique:</div>
+                        <li>Regular Martini fit</li>
+                        <li>Jacket with peak lapels, pockets with flap and small pocket, three internal pockets</li>
+                        <li>Single-breasted closure with two buttons and internal lining</li>
+                        <li>Pants with french seam pockets on the front and welt pockets with a button on the back</li>
+                        <li>The jacket measures 73.5 cm - 28.9 inches from the rear collar seam on a size 48 IT</li>
+                        <li>The crotch measures 17.5 cm - 6.9 inches from the centre back of the belt and the bottom is 18 cm - 7.1 inches wide on a size 48 IT</li>
+                        <li>The model is 185 cm - 72.8 inches tall and wears a size 48 IT</li>
+                        <li>Made in Italy</li>
+                    </div>
+                </div>
+                <div class="accordion-item1">
+                    <div class="accordion-header1">
+                        <h3>Care And Details</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body1">
+                        <p style="margin-bottom: 0;">External composition: 61% Polyester 32% Acetate 7% Polyamide</p>
+                        <p>Internal composition: 85% Silk 15% Viscose</p>
+                    </div>
+                </div>
+                <div class="accordion-item1">
+                    <div class="accordion-header1">
+                        <h3>Shipping & Returns</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body1">
+                        <p>Delivery and returns are always free on all orders. Standard delivery takes place approximately within 3-4 working days (5-6 working days in selected countries) from the moment in which the order leaves the warehouse. All orders are processed Monday to Friday, excluding holidays. More detailed information will be provided during the purchasing process.</p>
+                        <p>We remind you that this information does not apply in the case of pre-orders or personalized items, for which you will find information on returns and delivery times in the respective product data sheets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------Scroll Top--------------->
         <div class="gotop">
             <a id="mybutton" href="#">
                 <i class="fas fa-chevron-up"  style="color: white;">
@@ -163,8 +273,7 @@
         </div>
     </div>
 
-     <!--Footer-->
-     <hr class="hr-header">
+     <!----------------Footer--------------->
     <div>	
         <div>
             <div>

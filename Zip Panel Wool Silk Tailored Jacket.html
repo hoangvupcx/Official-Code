@@ -46,6 +46,12 @@
             $('.gobot').click(function(event) {
                 $('html,body').animate({scrollTop: 2350},800);
             });
+
+            $('.accordion-item1.active .accordion-body1').slideDown();
+            $('.accordion-header1').click(function(){
+                $(this).parent().toggleClass('active');
+                $(this).parent().children('.accordion-body1').slideToggle(); // Từ header tìm về cha (item) rồi đưa về con (body)
+            })
         });
     </script>
     <style>
@@ -56,7 +62,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <!--Navigation-->
+        <!-----------------Navigation---------------->
         <nav>
             <ul class="menu">
                 <li class="logo">
@@ -74,7 +80,7 @@
             </ul>
         </nav>
 
-        <!--Details-->
+        <!---------------------Details------------------>
         <div>
             <pre class="menu-details"><a href="./Sale.html">Sale</a> >  Zip Panel Wool Silk Tailored Jacket - $2.392</pre>
         </div>
@@ -87,9 +93,59 @@
                 <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw1986b4ba/images/zoom/G020JZFU4IK_B0011_4.jpg?sw=742&sh=944&sm=fit" alt="">
                 <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw7da52f43/images/zoom/G020JZFU4IK_B0011_8.jpg?sw=742&sh=944&sm=fit" alt="">
             </div>
+            <div class="product-1 product media">
+                <div id="demo1" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo1" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo1" data-slide-to="1"></li>
+                        <li data-target="#demo1" data-slide-to="2"></li>
+                        <li data-target="#demo1" data-slide-to="3"></li>
+                        <li data-target="#demo1" data-slide-to="4"></li>
+                        <li data-target="#demo1" data-slide-to="5"></li>
+                      </ul>
+                    
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw8ca1c87f/images/zoom/G020JZFU4IK_B0011_0.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwfffd6b4b/images/zoom/G020JZFU4IK_B0011_1.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwba2a800f/images/zoom/G020JZFU4IK_B0011_2.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwd78e4319/images/zoom/G020JZFU4IK_B0011_3.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw1986b4ba/images/zoom/G020JZFU4IK_B0011_4.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw7da52f43/images/zoom/G020JZFU4IK_B0011_8.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                    </div>
+                    
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+                        <span><i class="fas fa-chevron-left"></i></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo1" data-slide="next">
+                        <span><i class="fas fa-chevron-right"></i></span>
+                    </a>
+                    <a href="./Login.html"><button class="add-to-bag media-add-to-bag">Add to bag</button></a>
+                </div>
+            </div>
+            <div class="text-product media-text-product">
+                <p>Zip Panel Wool Silk Tailored Jacket</p>
+                <pre><del>$2.990 </del>  $2.392  (30%)</pre>
+                <p><i class="fas fa-circle" style="color: rgb(1, 1, 58);"></i> Blue</p>
+            </div>
         </div>
 
-        <!--Description-->
+        <!----------------Description--------------->
         <div class="Detail-product"> 
             <div class="row1">
                 <h5>Description</h5>
@@ -121,7 +177,54 @@
             </div>
         </div>
 
-        <!--Scroll Top-->
+        <!-----------------Accordion------------------>
+        <div class="cover">
+            <div class="accordion1">
+                <div class="accordion-item1 active">
+                    <div class="accordion-header1">
+                        <h3>Description</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body1">
+                        <div style="margin-bottom: 15px;">
+                            An Italian-tailored jacket in wool silk, reimagined with a silk-satin zip panel.
+                        </div>
+                        <li>Classic fit</li>
+                        <li>Model’s height: 188cm/6ft 2in. Model wears size IT 50.</li>
+                        <li>Lining: 100% cupro</li>
+                        <li>Buttons: buffalo horn</li>
+                        <li>Single-breasted closure, notch lapels, hand-stitched buttonhole on lapel, chest welt pocket, flap pockets, interior button-through welt pockets, working cuffs, single vent</li>
+                        <li>Regular rise, concealed hook-and-bar, button and zip fly closure, side slip pockets, back button-through welt pockets</li>
+                        <li>Specialist dry clean</li>
+                        <li>Made in Italy</li>
+                    </div>
+                </div>
+                <div class="accordion-item1">
+                    <div class="accordion-header1">
+                        <h3>Care And Details</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body1">
+                        <p style="margin-bottom: 0;">Outer: 83% wool, 17% silk</p>
+                        <p style="margin-bottom: 0;">Trim: 100% silk</p>
+                        <p style="margin-bottom: 0;">Sleeve lining: 100% cupro</p>
+                        <p>Undercollar: 52% linen, 30% wool, 18% viscose</p>
+                    </div>
+                </div>
+                <div class="accordion-item1">
+                    <div class="accordion-header1">
+                        <h3>Shipping & Returns</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body1">
+                        <p>Delivery and returns are always free on all orders. Standard delivery takes place approximately within 3-4 working days (5-6 working days in selected countries) from the moment in which the order leaves the warehouse. All orders are processed Monday to Friday, excluding holidays. More detailed information will be provided during the purchasing process.</p>
+                        <p>We remind you that this information does not apply in the case of pre-orders or personalized items, for which you will find information on returns and delivery times in the respective product data sheets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------Scroll Top--------------->
         <div class="gotop">
             <a id="mybutton" href="#">
                 <i class="fas fa-chevron-up"  style="color: white;">
@@ -159,8 +262,7 @@
         </div>
     </div>
 
-     <!--Footer-->
-     <hr class="hr-header">
+     <!----------------Footer--------------->
     <div>	
         <div>
             <div>

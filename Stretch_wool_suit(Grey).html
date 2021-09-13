@@ -46,6 +46,12 @@
             $('.gobot').click(function(event) {
                 $('html,body').animate({scrollTop: 1500},800);
             });
+
+            $('.accordion-item1.active .accordion-body1').slideDown();
+            $('.accordion-header1').click(function(){
+                $(this).parent().toggleClass('active');
+                $(this).parent().children('.accordion-body1').slideToggle(); // Từ header tìm về cha (item) rồi đưa về con (body)
+            })
         });
     </script>
     <style>
@@ -56,7 +62,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <!--Navigation-->
+        <!-----------------Navigation---------------->
         <nav>
             <ul class="menu">
                 <li class="logo">
@@ -74,7 +80,7 @@
             </ul>
         </nav>
 
-        <!--Details-->
+        <!---------------------Details------------------>
         <div>
             <pre class="menu-details"><a href="./Products.html">Products</a> > <a href="./Products.html">Suits</a> >  Stretch wool suit - $2.775</pre>
         </div>
@@ -85,9 +91,51 @@
                 <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw201e2682/images/zoom/G1HNMTFUBBG_S8290_4.jpg?sw=742&sh=944&sm=fit" alt="">
                 <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwbfb1193d/images/zoom/G1HNMTFUBBG_S8290_6.jpg?sw=742&sh=944&sm=fit" alt="">
             </div>
+            <div class="product-1 product media">
+                <div id="demo1" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo1" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo1" data-slide-to="1"></li>
+                        <li data-target="#demo1" data-slide-to="2"></li>
+                        <li data-target="#demo1" data-slide-to="3"></li>
+                      </ul>
+                    
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwfaf235f7/images/zoom/G1HNMTFUBBG_S8290_0.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwfda76e5d/images/zoom/G1HNMTFUBBG_S8290_1.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw201e2682/images/zoom/G1HNMTFUBBG_S8290_4.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dwbfb1193d/images/zoom/G1HNMTFUBBG_S8290_6.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                    </div>
+                    
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+                        <span><i class="fas fa-chevron-left"></i></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo1" data-slide="next">
+                        <span><i class="fas fa-chevron-right"></i></span>
+                    </a>
+                    <a href="./Login.html"><button class="add-to-bag media-add-to-bag">Add to bag</button></a>
+                </div>
+            </div>
+            <div class="text-product media-text-product">
+                <p>Stretch wool suit</p>
+                <p>$2.775</p>
+                <p><i class="fas fa-circle" style="color: #ccc;"></i> Grey</p>
+            </div>
         </div>
 
-        <!--Description-->
+        <!----------------Description--------------->
         <div class="Detail-product"> 
             <div class="row1">
                 <h5>Description</h5>
@@ -118,7 +166,53 @@
             </div>
         </div>
 
-        <!--Scroll Top-->
+        <!-----------------Accordion------------------>
+        <div class="cover">
+            <div class="accordion1">
+                <div class="accordion-item1 active">
+                    <div class="accordion-header1">
+                        <h3>Description</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body1">
+                        <div style="margin-bottom: 15px;">
+                            <i>In the VestonVux Men's collections, the most sought-after luxury is combined with the craftsmanship and tailoring that distinguish impeccably cut and extremely refined garments.</i></div>
+                        <div>Three piece suit in stretch wool:</div>
+                        <li>Jacket with classic lapels, flap pockets and breast pocket</li>
+                        <li>Button closure</li>
+                        <li>Interior lining</li>
+                        <li>Waistcoat with 5 buttons and welt pockets</li>
+                        <li>Trousers with front slant pockets and rear welt pocket with buttons</li>
+                        <li>The jacket measures 72 cm from rear collar seam on an Italian size 48</li>
+                        <li>The waistcoat measures 60 cm from the back neckline on an Italian size 48</li>
+                        <li>The crotch measure 17.5 cm from the centre back of the waist and the leg opening is 18cm long on an Italian size 48</li>
+                        <li>Mannequin is 185 cm tall and wears a 48 IT</li>
+                    </div>
+                </div>
+                <div class="accordion-item1">
+                    <div class="accordion-header1">
+                        <h3>Care And Details</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body1">
+                        <p style="margin-bottom: 0;">External composition: 97% Virgin wool 3% Elastane</p>
+                        <p>Internal composition: 70% Rayon 30% Cupro</p>
+                    </div>
+                </div>
+                <div class="accordion-item1">
+                    <div class="accordion-header1">
+                        <h3>Shipping & Returns</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body1">
+                        <p>Delivery and returns are always free on all orders. Standard delivery takes place approximately within 3-4 working days (5-6 working days in selected countries) from the moment in which the order leaves the warehouse. All orders are processed Monday to Friday, excluding holidays. More detailed information will be provided during the purchasing process.</p>
+                        <p>We remind you that this information does not apply in the case of pre-orders or personalized items, for which you will find information on returns and delivery times in the respective product data sheets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------Scroll Top--------------->
         <div class="gotop">
             <a id="mybutton" href="#">
                 <i class="fas fa-chevron-up"  style="color: white;">
@@ -155,8 +249,7 @@
             </div>
         </div>
 
-        <!--Footer-->
-        <hr class="hr-header">
+        <!----------------Footer--------------->
         <div class="abc">	
             <div>
                 <div>
