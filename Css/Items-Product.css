@@ -123,8 +123,11 @@ h5 {
     padding-top: 0.6rem;
 }
 
-.media .carousel-inner img{
-    width: 50%;
+.media .carousel-inner img, .media-text-product p{
+    width: 100%;
+    clear: both;
+    display: none;
+    font-size: 16px;
 }
 
 /*------------------Media Query----------------------*/
@@ -173,12 +176,21 @@ h5 {
         padding: 6px;
     }
     .row1, .row2, .row3 {
-        font-size: 8px;
+        font-size: 12px;
         width: 32.7%;
         padding: 0 18px;
-        height: 370px;
+        height: 500px;
     }  
     .Detail-product h5 {
+        font-size: 15px;
+    }
+    .picture-product img {
+        display: none;
+    }
+    .media .carousel-inner img, .media-text-product p {
+        display: block;
+    }
+    div.text-product p {
         font-size: 15px;
     }
 }
