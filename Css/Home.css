@@ -82,7 +82,7 @@ li.first {
 .start-demo1 > a:hover, .start-demo2 > a:hover {
     color: #6e6b6b;
 }
-.open-demo1{
+.open-demo1, .end-demo1{
     background-color: #f3f3f3;
     font-family: Questrial, sans-serif;
     margin-top: 5px;
@@ -117,6 +117,10 @@ li.first {
     padding: 12px;
     width: 100%;
     height: 800px;
+}
+.banner img{
+    width: 100%;
+    padding-top: 5px;
 }
 .items {
     display: flex;
@@ -213,7 +217,7 @@ li.first {
 /*------------------------------Contact--------------------------------*/
 div.header {
     height: 500px;
-    background-image: url(/Images/Contact-Wallet.jpg);
+    background-image: url(https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-position-y: -120px;
     background-position-x: -100px;
     background-size: cover; /* Tự động giãn so với kích thước */
@@ -391,6 +395,7 @@ input.button:hover {
     font-size: 1rem;
     width: 400px;
     text-align: center; 
+    outline: none;
 }
 .inputEmail:hover {
     border-bottom: 3px solid black !important;
@@ -439,6 +444,7 @@ div.form-content span {
     font-family: Questrial, sans-serif;
     font-size: 26px;
     clear: left;
+    min-width: 100vw;
 }
 div > h2 {
     font-family: Questrial, sans-serif;
@@ -456,8 +462,9 @@ div > h2 {
 .hr-end {
     border-top: 1px solid #d5d5d5;
 	width: 90%;
+    margin: revert;
 }
- h2, .social {
+ .text-footer, .social {
     text-align: center !important; /* Canh giữa*/
 }
 .hr-footer {
@@ -467,10 +474,13 @@ div > h2 {
     margin: revert;
 }
 div.item-footer > div {
-    width: 32%;
+    width: 33%;
     display: inline-block;
     text-align: center !important;
     top: 0;
+} 
+div.item-footer p {
+    padding: 0 15px;
 }
 .social > a  {
     clear: left;

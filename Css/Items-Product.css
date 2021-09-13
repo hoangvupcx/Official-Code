@@ -123,6 +123,10 @@ h5 {
     padding-top: 0.6rem;
 }
 
+.media .carousel-inner img{
+    width: 50%;
+}
+
 /*------------------Media Query----------------------*/
 @media screen and (max-width: 1450px) /*110%*/ {
     .accordion {

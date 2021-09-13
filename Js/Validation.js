@@ -48,7 +48,7 @@ function Validator(options) {
     // Lấy element của form cần validate
     var formElement = document.querySelector(options.form);
     if (formElement) {
-        // Lặp qua mỗi rule và xử lý (lắng nghe sự kiện blur, input, ...)
+        // Lặp qua mỗi rule và xử lý (lắng nghe sự kiện blur, input, ..)
         options.rules.forEach(function (rule) {
 
         //Trường hợp 1 Element có nhiều rules    
@@ -177,6 +177,6 @@ Validator.isConfirmed = function (selector, getConfirmValue, message) {
         selector: selector,
         test: function (value) {
             return value === getConfirmValue() ? undefined : message || 'Does not match information';
-        }// Nếu value người dùng nhập vào giống với điều kiện của Validator đã định nghĩa thì message lỗi rỗng, ngược lại.........
+        }// Nếu value người dùng nhập vào giống với điều kiện của Validator đã định nghĩa thì message lỗi rỗng, ngược lại.....
     }
 }

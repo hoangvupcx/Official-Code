@@ -10,7 +10,9 @@ body {
     font-family: Questrial, sans-serif;
 }
 .main {
-    background-color: #f3f3f3;
+    background-image: url(https://www.armani.com/content/images/cms/ycm/resource/blob/68934/e2f7d0a833601e604d2411caf41df08a/service-attention-made-to-measure-giorgioarmani-01--data.png/w1920.jpg);
+    background-size: cover;
+    background-attachment: fixed;
     min-height: 100vh;
     display: flex !important;
     justify-content: center;
@@ -27,11 +29,14 @@ body {
     box-shadow: 0 5px 5px 5px rgba(18, 18, 19, 0.1);
 }
 .form .heading {
-    font-size: 25px;
+    font-size: 35px;
     margin: 20px 0;
     letter-spacing: 0.5px;
     font-weight: lighter;
-    text-align: center;
+    text-align: start;
+}
+h2.create {
+    text-align: center !important;
 }
 .form-group {
     display: flex;
@@ -127,4 +132,215 @@ a:hover {
 }
 .end {
     margin-top: 150px;
+}
+
+/*-------------------Media Query---------------------*/
+@media screen and (max-width: 1050px) /*150%*/ {
+    .form {
+        width: 400px;
+        padding: 25px 50px;
+    }
+    .form .heading {
+        font-size: 28px !important;
+    }
+    .info {
+        font-size: 15px !important;
+        line-height: 1.3rem !important;
+    }
+    .form-message {
+        font-size: 12px !important;
+        line-height: 1rem !important;
+    }
+    .form-text {
+        font-size: 0.75rem !important;
+        margin: 0;
+        padding-left: 11px;
+    }
+    .mandatory {
+        font-size:  9px;
+        margin-top: 15px;
+        margin-left: 45%;
+    }
+    .form-submit, .form-register {
+        height: 35px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 800px) /*200%*/ {
+    .form {
+        width: 350px;
+        padding: 20px 40px;
+    }
+    .form .heading {
+        font-size: 25px !important;
+    }
+    .heading {
+        margin-bottom: 0.25rem;
+    }
+    .info {
+        font-size: 12px !important;
+        line-height: 1rem !important;
+    }
+    .form-message {
+        font-size: 10px;
+    }
+    .form-text {
+        font-size: 0.65rem;
+        padding-top: 6px;
+        padding-left: 10px;
+    }
+    .mandatory {
+        font-size:  8px;
+        margin-top: 0px;
+    }
+    .form-submit, .form-register {
+        height: 30px;
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 750px) /*250%*/ {
+    .form {
+        width: 280px;
+        padding: 15px 30px;
+    }
+    .form .heading {
+        font-size: 20px !important;
+    }
+    .info {
+        font-size: 10px !important;
+    }
+    .form-message {
+        font-size: 8px;
+        padding-top: 0;
+    }
+    .mandatory {
+        font-size:  7px;
+        margin-left: 40%;
+        margin-bottom: 10px;
+    }
+    .form-text {
+        font-size: 0.6rem;
+        border-bottom: 1px solid rgb(170, 168, 168);
+        height: 30px;
+    }
+    .form-text:hover {
+        border-bottom: 1.5px solid black !important;
+    }
+    .form-submit, .form-register {
+        height: 25px;
+        font-size: 10px;
+    }
+    .form-submit:hover, .form-register {
+        border: 1px solid grey ;
+    }
+}
+@media screen and (max-width: 600px) /*300%*/ {
+    .form {
+        width: 230px;
+        padding: 15px 30px;
+    }
+    .form .heading {
+        font-size: 14px !important;
+        margin-bottom: 10px;
+    }
+    .info {
+        font-size: 8px !important;
+        line-height: 12px !important;
+    }
+    .form-message {
+        font-size: 7px !important;
+    }
+    .form-text {
+        font-size: 0.5rem !important;
+        margin-top: -10px !important;
+        padding-top: 10px !important;
+    }
+    .mandatory {
+        font-size:  6px;
+        margin-left: 35%;
+    }
+    .form-submit, .form-register {
+        height: 20px;
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 450px) /*400%*/ {
+    .form {
+        width: 180px;
+        padding: 10px 20px;
+    }
+    .form .heading {
+        font-size: 12px !important;
+        margin-bottom: 5px;
+    }
+    .info {
+        font-size: 7px !important;
+        line-height: 10px !important;
+    }
+    .form-message {
+        font-size: 6px !important;
+    }
+    .form-text {
+        font-size: 0.45rem !important;
+        padding-left: 8px;
+        height: 25px;
+        padding-top: 8px;
+    }
+    .mandatory {
+        font-size:  5px;
+        margin-bottom: 5px;
+        margin-top: -5px;
+    }
+    .form-submit, .form-register {
+        height: 15px;
+        font-size: 6px;
+    }
+    .form-submit {
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 360px) /*500%*/ {
+    .form {
+        width: 150px;
+        padding: 5px 15px;
+    }
+    .form .heading {
+        font-size: 10px !important;
+        margin-top: 5px;
+    }
+    .info {
+        font-size: 6px !important;
+        line-height: 8px !important;
+    }
+    .form-message {
+        font-size: 5px;
+        padding: 0;
+    }
+    .mandatory {
+        font-size:  4px;
+        margin-top: -10px;
+    }
+    .form-text {
+        font-size: 0.35rem !important;
+        border-bottom: 0.5px solid rgb(170, 168, 168);
+        border-bottom-left-radius: 2.5px;
+        padding-top: 8px;
+        height: 20px;
+        padding-left: 3px;
+        margin-bottom: 5px;
+    }
+    .form-text:hover {
+        border-bottom: 0.75px solid black !important;
+    }
+    .form-submit, .form-register {
+        height: 15px;
+        font-size: 6px;
+    }
+    
+    .form-submit:hover, .form-register {
+        border: 0.5px solid grey ;
+    }
+    .spacer {
+        margin-top: 20px;
+    }
 }
