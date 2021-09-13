@@ -40,8 +40,6 @@
                 }
             });
 
-            
-
             $('.gotop').click(function(event) {
                 $('html,body').animate({scrollTop: 0},800);
             });
@@ -49,6 +47,12 @@
             $('.gobot').click(function(event) {
                 $('html,body').animate({scrollTop: 1500},800);
             });
+
+            $('.accordion-item1.active .accordion-body1').slideDown();
+            $('.accordion-header1').click(function(){
+                $(this).parent().toggleClass('active');
+                $(this).parent().children('.accordion-body1').slideToggle(); // Từ header tìm về cha (item) rồi đưa về con (body)
+            })
         });
     </script>
     <style>
@@ -87,7 +91,48 @@
                 <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw37990514/images/zoom/GT142EG0U05_N3454_1.jpg?sw=742&sh=944&sm=fit" alt="">
                 <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw47fe813d/images/zoom/GT142EG0U05_N3454_2.jpg?sw=742&sh=944&sm=fit" alt="">
             </div>
+            <div class="product-1 product media">
+                <div id="demo1" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#demo1" data-slide-to="0" class="active"></li>
+                        <li data-target="#demo1" data-slide-to="1"></li>
+                        <li data-target="#demo1" data-slide-to="2"></li>
+                      </ul>
+                    
+                    <!-- The slideshow -->
+                    <!-- The slideshow -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw0e0e823f/images/zoom/GT142EG0U05_N3454_0.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw37990514/images/zoom/GT142EG0U05_N3454_1.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.dolcegabbana.com/dw/image/v2/AAGA_PRD/on/demandware.static/-/Sites-15/default/dw47fe813d/images/zoom/GT142EG0U05_N3454_2.jpg?sw=742&sh=944&sm=fit" alt="">
+                        </div>
+                    </div>
+                    
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+                        <span><i class="fas fa-chevron-left"></i></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo1" data-slide="next">
+                        <span><i class="fas fa-chevron-right"></i></span>
+                    </a>
+                    <a href="./Login.html"><button class="add-to-bag media-add-to-bag">Add to bag</button></a>
+                </div>
+            </div>
+            <div class="text-product media-text-product">
+                <p>4 cm (16”) silk blade tie</p>
+                <p>$220</p>
+                <p><i class="fas fa-circle" style="color: grey;"></i> Grey</p>
+            </div>
         </div>
+
+        
 
         <!--Description-->
         <div class="Detail-product"> 
@@ -116,6 +161,47 @@
             </div>
         </div>
 
+        <!--Accordion-->
+        <div class="cover">
+            <div class="accordion1">
+                <div class="accordion-item1 active">
+                    <div class="accordion-header1">
+                        <h3>Description</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body1">
+                        <div style="margin-bottom: 15px;">
+                            <i>VestonVux accessories have been created for a man who loves to stand out with those little stylish details that make all the difference.</i>
+                        </div>
+                        <div>Tie from the Martini line in silk:</div>
+                        <li>Pointed end</li>
+                        <li>Blade 4 cm – 1.6 inches</li>
+                        <li> Single loop on the back with branded label</li>
+                        <li>Made in Italy</li>
+                    </div>
+                </div>
+                <div class="accordion-item1">
+                    <div class="accordion-header1">
+                        <h3>Care And Details</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body1">
+                        <p>Composition: 100% Silk</p>
+                    </div>
+                </div>
+                <div class="accordion-item1">
+                    <div class="accordion-header1">
+                        <h3>Shipping & Returns</h3>
+                        <i class="arrow fas fa-chevron-down"></i>
+                    </div>
+                    <div class="accordion-body1">
+                        <p>Delivery and returns are always free on all orders. Standard delivery takes place approximately within 3-4 working days (5-6 working days in selected countries) from the moment in which the order leaves the warehouse. All orders are processed Monday to Friday, excluding holidays. More detailed information will be provided during the purchasing process.</p>
+                        <p>We remind you that this information does not apply in the case of pre-orders or personalized items, for which you will find information on returns and delivery times in the respective product data sheets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!--Scroll Top-->
         <div class="gotop">
             <a id="mybutton" href="#">
@@ -124,7 +210,7 @@
             </a>
         </div>
 
-        <!--Accordion-->
+        
         <div class="accordion">
             <div class="accordion-items active">
                 <div class="accordion-header"></div>
@@ -154,7 +240,6 @@
     </div>
 
      <!--Footer-->
-     <hr class="hr-header">
     <div>	
         <div>
             <div>

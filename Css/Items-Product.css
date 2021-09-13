@@ -108,6 +108,9 @@ h5 {
 
 
 /*------------------Accordion----------------------*/
+.accordion1 {
+    clear: left;
+}
 .accordion-header1 {
     font-family: Questrial, sans-serif;
     justify-content: left;
@@ -174,7 +177,7 @@ h5 {
     width: 100%;
     clear: both;
     display: none;
-    font-size: 16px;
+    font-size: 16px !important;
 }
 
 /*------------------Media Query----------------------*/
@@ -219,7 +222,7 @@ h5 {
 }
 @media screen and (max-width: 750px) /*250%*/ {
     .menu-details > a, pre {
-        font-size: 15px;
+        font-size: 18px;
         padding: 6px;
     }
     .Detail-product {
@@ -231,7 +234,7 @@ h5 {
     .media .carousel-inner img, .media-text-product p {
         display: block;
     }
-    div.text-product p, .media-add-to-bag {
+     .media-add-to-bag {
         font-size: 15px;
         height: 30px;
     }
