@@ -810,7 +810,7 @@ div.item-footer p {
         font-size: 25px !important;
     }
     .new > p, div.text-product p, p.collection, div.text-product pre {
-        font-size: 50%;
+        font-size: 70%;
         letter-spacing: 0.25px;
     }
     p.collection {
@@ -846,7 +846,7 @@ div.item-footer p {
         font-size: 30px;
     }
     .head-text p, .carousel-inner p, .item-text pre {
-        font-size: 8px;
+        font-size: 12px;
     }
     .carousel-inner p:last-child {
         margin: 0;
@@ -994,7 +994,7 @@ div.item-footer p {
         margin: 5px 0 !important;
     }
     .new > p, div.text-product p, p.collection {
-        font-size: 35%;
+        font-size: 50%;
         letter-spacing: 0.25px;
     }
     p.collection {
