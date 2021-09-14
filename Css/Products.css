@@ -92,4 +92,45 @@ div.text-product p:first-child {
     background-color: rgb(78, 76, 76);
 }
 
+
+
+/*--------------------Media Products----------------*/
+.media-carousel img {
+    width: 100%;
+    cursor: pointer;
+    margin: 10px 0px;
+    display: none;
+}
+.product-item {
+    width: 49%;
+    float: left;
+    margin-left: 1%;
+}
+.media-1, .media-2, .media-3,
+.media-4, .media-5, .media-6,
+.media-7, .media-8, .media-9,
+.media-10, .media-11 {
+    clear: left;
+    display: none;
+}
+
+
+
 /*--------------MEDIA QUERY--------------*/
+@media screen and (max-width: 750px) /*250%*/ {
+    .media-carousel img {
+        display: block;
+    }
+    .line-1, .line-2, .line-3, .line-4, .line-5, .line-6, .line-7, .line-8, .line-9 {
+        display: none;
+    }
+    .media-1, .media-2, .media-3,
+    .media-4, .media-5, .media-6,
+    .media-7, .media-8, .media-9,
+    .media-10, .media-11 {
+        display: block;
+    }
+    .product-item {
+        margin-bottom: 30px;
+    }
+}
