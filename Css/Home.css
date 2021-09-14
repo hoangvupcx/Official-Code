@@ -97,7 +97,7 @@ li.first {
     clear: both; /*clear cho demo 3 và 4*/
 }
 .carousel-inner p {
-    margin: 10px 0;
+    margin: 5px 0;
     text-align: center;
 }
 .carousel-inner a {
@@ -1128,7 +1128,7 @@ div.item-footer p {
     .slider {
         height: 200px;
     }
-    .head-text p, .carousel-inner p {
+    .carousel-inner p {
         font-size: 5px;
     }
     .item-text pre {
@@ -1231,6 +1231,9 @@ div.item-footer p {
     .carousel-caption h1{
 		font-size: 1rem;
 	}
+    .title-header {
+        font-size: 12px !important;
+    }
 	.carousel-caption h3.demo{		
 		font-size: 5px;	
         letter-spacing: 0.5px;
