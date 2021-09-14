@@ -32,9 +32,7 @@ img:first-child, img:nth-child(2) {
     margin-top: 0 !important;
 }
 
-div.text-product pre {
-    font-size: 16px;
-}
+
 .Detail-product {
     clear: left;
 }
