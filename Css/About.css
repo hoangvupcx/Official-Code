@@ -513,8 +513,14 @@ option {
     label {
         font-size: 5px;
         margin-top: 8px;
-        margin-bottom: -6px;
+        margin-bottom: -3px;
         line-height: 7.5px;
+    }
+    .form-caption.invalid {
+        line-height: 5px;
+    }
+    .form-caption.invalid .form-request {
+        font-size: 5px;
     }
     input[type="submit"] {
         font-size: 6px;
