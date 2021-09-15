@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./Css/About.css">
     <link rel="stylesheet" href="./Css/Home.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./Js/Validation.js"></script>
     <script>
         function checkNumber() {
                 var x = document.getElementById("number").value
@@ -165,7 +166,7 @@
         <div class="fill-in">
             <h1>BOOK AN APPOINTMENT</h1>
             <p>For more information regarding the VestonVux At Your Home service, please get in touch with us by calling <a href="#">028.3920.7621 </a>or by filling out the following form.</p>
-            <form action="">
+            <form action="" id="book-appointment">
                 <div class="form">
                     <ul class="book-appointment">
                         <li>
@@ -173,28 +174,32 @@
                         </li>
                         <li>
                             <label for="">Name*</label>
-                            <div>
-                                <input type="text" required>
+                            <div class="form-caption">
+                                <input type="text" id="name" class="form-text">
+                                <span class="form-request"></span>
                             </div>
                         </li>
                         <li>
                             <label for="">Email*</label>
-                            <div>
-                                <input type="email" required>
+                            <div class="form-caption">
+                                <input type="text" id="email" class="form-text">
+                                <span class="form-request"></span>
                             </div>
                         </li>
                         <li>
-                            <label for="">PHONE (INCLUDING INTERNATIONAL COUNTRY-CODE PREFIX)</label>
-                            <div>
-                                <input oninput="checkNumber()" id="number" type="text" required>
+                            <label for="">PHONE* (INCLUDING INTERNATIONAL COUNTRY-CODE PREFIX)</label>
+                            <div class="form-caption">
+                                <input oninput="checkNumber()" id="number" type="text" class="form-text">
+                                <span class="form-request"></span>
                             </div>
                         </li>
                         <li>
-                            <label for="">location*</label>
-                            <div>
-                                <select class="select_join" name="" id="" required>
-                                    
-                                        <option>--Select--</option>
+                            <label for="">COUNTRY/REGION*</label>
+                            <div class="form-caption">
+                                
+                                <select class="select_join" name="" id="selection" required>
+                                    <span class="form-request"></span>
+                                        <option>Select country/region</option>
                                         <option value="1" label="">Afganistan</option>
                                         <option value="Albania" label="Albania">Albania</option>
                                         <option value="Algeria" label="Algeria">Algeria</option>
@@ -282,32 +287,35 @@
                                         <option value="Venezuela" label="Venezuela">Venezuela</option>
                                         <option value="Vietnam" label="Vietnam">Vietnam</option>
                                         <option value="Yemen" label="Yemen">Yemen</option>
-                                    
                                 </select>
+                                
                             </div>
                         </li>
                         <li>
                             <label for="">CITY*</label>
-                            <div>
-                                <input type="text" size= required>
+                            <div class="form-caption">
+                                <input type="text" id="city" class="form-text">
+                                <span class="form-request"></span>
                             </div>
                         </li>
                         <li>
                             <label for="">ADDRESS*</label>
-                            <div>
-                                <input type="text" required>
+                            <div class="form-caption">
+                                <input type="text" id="address" class="form-text">
+                                <span class="form-request"></span>
                             </div>
                         </li>
                         <li>
                             <label for="">ZIP CODE*</label>
-                            <div>
-                                <input type="text" required>
+                            <div class="form-caption">
+                                <input type="text" id="code" class="form-text">
+                                <span class="form-request"></span>
                             </div>
                         </li>
                         <li>
                             <label for="">MESSAGE</label>
-                            <div class="message">
-                                <textarea name="" id="message" cols="50%" rows="10">
+                            <div class="message form-caption" class="form-text">
+                                <textarea name="" id="message" cols="50" rows="10">
                                 </textarea>
                             </div>
                         </li>
@@ -370,5 +378,29 @@
                 <h5> Copyright &copy; VESTONVUX</h5>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // Mong muốn của chúng ta  
+          Validator({
+            form: '#book-appointment',
+            formGroupSelector: '.form-caption',
+            errorSelector: '.form-request',
+            rules: [
+                Validator.isRequired('#email', 'The email address field is required'),
+                Validator.isEmail('#email', 'Please enter a valid email address.'),
+                Validator.isRequired('#name', 'The name field is required'),
+                Validator.isRequired('#number','The telephone number field is required'),
+                Validator.isRequired('#city', 'The city field is required'),
+                Validator.isRequired('#address', 'The address field is required'),
+                Validator.isRequired('#code', 'The Zip Code field is required'),
+            ],
+            onSubmit: function (data) {
+              // Call API
+              console.log(data);
+            }
+          });
+        });
+  
+      </script>
 </body>
 </html>

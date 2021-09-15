@@ -162,7 +162,7 @@ input[type="text"], input[type="email"], input[type="number"], .select_join {
     height: 45px;
     letter-spacing: .025rem;
     border-radius: 2px;
-    font-size: .55rem;
+    font-size: 1rem;
     width: 50%;
     background-color: white;
 }
@@ -214,6 +214,23 @@ input[type="submit"]:hover {
     color: black;
     border: 2px solid black ;
 }
+
+.form-request {
+    text-align: left;
+}
+.form-caption.invalid .form-text {
+    border-color: #f33a58;
+    font-family: Questrial, sans-serif;
+}
+
+.form-caption.invalid .form-request {
+    color: #f33a58;
+    font-family: Questrial, sans-serif;
+    font-size: 12px;
+}
+option {
+    font-size: 15px;
+}
 ::-webkit-scrollbar { /* Xóa mép thanh scroll */
     width: 10px;
 }
@@ -255,13 +272,20 @@ input[type="submit"]:hover {
     }
     input[type="text"], input[type="email"], input[type="number"], .select_join {
         height: 30px;
-        font-size: 10px;
+        font-size: 12px;
     }
     option {
         font-size: 10px;
     }
     label {
         font-size: 8px;
+    }
+    .form-caption.invalid .form-request {
+        font-size: 10px;
+    }
+    
+    .form-caption.invalid {
+        line-height: 18px;
     }
     input[type="submit"] {
         font-size: 10px;
@@ -293,6 +317,10 @@ input[type="submit"]:hover {
         height: 25px;
         font-size: 8px;
     }
+    input[type="submit"]:hover {
+        border: 1px solid black;
+        background-color: #f3f3f3;
+    }
     option {
         font-size: 8px;
     }
@@ -315,7 +343,7 @@ input[type="submit"]:hover {
         font-size: 40px;
     }
     div.content > div.text-first p, div.content > div.text-final p {
-        font-size: 12px;
+        font-size: 15px;
         padding: 0 20px;
         margin-top: 10px;
     }
@@ -324,8 +352,12 @@ input[type="submit"]:hover {
         height: 20px;
         width: 50px;
     }
+    .carousel-caption h3.demo {
+        font-size: 15px !important;
+    }
 }
 @media screen and (max-width: 600px) /*300%*/ {
+    
     div.header-about {
         height: 200px;
     }
@@ -340,6 +372,7 @@ input[type="submit"]:hover {
         display: none !important;
     }
     div.content > div.text-first p{
+        font-size: 12px;
         padding: 0px 3% !important;
         margin: 8px 0px !important;
         font-size: 8px;
@@ -361,31 +394,35 @@ input[type="submit"]:hover {
         margin-bottom: 20px;
     }
     .fill-in {
-        width: 250px;
+        width: 350px;
         padding-top: 40px;
         margin: 65px auto;
     }
     div.footer-about {
-        height: 750px;
+        height: 820px;
     }
     .fill-in h1 {
-        font-size: 12px;
+        font-size: 18px;
         margin-bottom: 10px;
     }
     .fill-in p {
-        font-size: 7px;
+        font-size: 10px;
         padding: 0 50px 10px;
     }
     .request {
-        font-size: 0.35rem;
+        font-size: 0.4rem;
         margin: 10px 0;
+        padding-right: 50%;
     }
     input[type="text"], input[type="email"], input[type="number"], .select_join{
-        height: 20px;
-        font-size: 6px;
+        height: 23px;
+        font-size: 8px;
         border: 0.5px solid black;
-    }option {
-        font-size: 6px;
+        font-family: Questrial, sans-serif;
+    }
+    option {
+        font-size: 8px;
+        font-family: Questrial, sans-serif;
     }
     .message {
         padding-top: 5px;
@@ -394,14 +431,21 @@ input[type="submit"]:hover {
         border: 0.5px solid black !important;
     }
     label {
-        font-size: 4px;
+        font-size: 7px;
+        width: 50%;
+        line-height: 10px;
         margin-top: 12px;
-        margin-bottom: 0;
+        margin-bottom: -3px;
+        font-family: Questrial, sans-serif;
     }
     input[type="submit"] {
         font-size: 6px;
         height: 15px;
         width: 40px;
+    }
+    input[type="submit"]:hover {
+        border: 1px solid black;
+        background-color: #f3f3f3;
     }
 }
 @media screen and (max-width: 450px) /*400%*/ {
@@ -418,11 +462,11 @@ input[type="submit"]:hover {
         font-size: 20px;
     }
     div.content > div.text-first p, .hidden-text2 {
-        font-size: 6px;
+        font-size: 10px;
         padding-top: 5px;
     }
     .hidden-text2:last-child {
-        font-size: 6px;
+        font-size: 10px;
         margin-bottom: 30px;
     }
     .hidden-img2 {
@@ -432,33 +476,33 @@ input[type="submit"]:hover {
         height: 750px;
     }
     .fill-in {
-        width: 200px;
+        width: 250px;
         padding-top: 20px;
         margin: 40px auto;
     }
     div.footer-about {
-        height: 550px;
+        height: 630px;
     }
     .fill-in h1 {
-        font-size: 8px;
+        font-size: 15px;
         margin-bottom: 5px;
     }
     .fill-in p {
-        font-size: 5px;
-        padding: 0 50px 5px;
+        font-size: 8px;
+        padding: 0 35px 5px;
         margin: 0;
     }
     .request {
-        font-size: 0.25rem;
+        font-size: 0.35rem;
         margin: 10px 0;
     }
     input[type="text"], input[type="email"], input[type="number"], .select_join {
-        height: 15px;
-        font-size: 4px;
+        height: 20px;
+        font-size: 5px;
         border: 0.5px solid black;
     }
     option {
-        font-size: 4px;
+        font-size: 6px;
     }
     .message {
         padding-top: 10px;
@@ -467,13 +511,14 @@ input[type="submit"]:hover {
         border: 0.5px solid black !important;
     }
     label {
-        font-size: 3px;
+        font-size: 5px;
         margin-top: 8px;
-        margin-bottom: -5px;
+        margin-bottom: -6px;
+        line-height: 7.5px;
     }
     input[type="submit"] {
-        font-size: 4px;
-        height: 12px;
-        width: 30px;
+        font-size: 6px;
+        height: 15px;
+        width: 40px;
     }
 }
