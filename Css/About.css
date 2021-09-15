@@ -475,6 +475,9 @@ option {
     div.footer-about {
         height: 750px;
     }
+    #book-appointment {
+        margin-left: 2px;
+    }
     .fill-in {
         width: 250px;
         padding-top: 20px;
