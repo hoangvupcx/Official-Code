@@ -568,6 +568,7 @@ div.item-footer p {
     ul > input, textarea {
         font-size: 15px;
         width: 350px;
+        font-family: Questrial, sans-serif;
     }
     ul > input {
         height: 35px;
