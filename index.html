@@ -584,7 +584,7 @@
                 <div class="content-newletter">Join our newsletter to get exclusive contents, offers, services and first access to products.</div>
                 
                 <div class="form-content">
-                    <input type="text" class="inputEmail" id="email" placeholder="  Enter your email address..">
+                    <input type="text" class="inputEmail" id="email" placeholder="  Enter your email address...">
                     <span class="form-erro"></span>
                 </div>
                 <button class="submit">Submit</button>
@@ -657,7 +657,7 @@
             formGroupSelector: '.form-content',
             errorSelector: '.form-erro',
             rules: [
-                Validator.isRequired('#email'),
+                Validator.isRequired('#email', 'The email address field is required'),
                 Validator.isEmail('#email', 'Please enter a valid email address.')
             ],
             onSubmit: function (data) {
