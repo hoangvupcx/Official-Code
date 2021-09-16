@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./Css/Home.css">
     <link rel="stylesheet" href="./Css/Items-Product.css">
     <script src="./Js/JavaScript.js"></script>
+    <script src="./Js/Validation.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         .menu li:nth-child(7) > a {
@@ -54,12 +55,29 @@
             <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.9284417619238!2d106.67618761480114!3d10.81678819229415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528e1904532b1%3A0x9851d48b0be5bdfd!2zMzcxIE5ndXnhu4VuIEtp4buHbSwgUGjGsOG7nW5nIDMsIEfDsiBW4bqlcCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5o!5e0!3m2!1svi!2s!4v1629261149034!5m2!1svi!2s" width="50%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </p>
         <div class="responds">
-            <form action="">
-                <ul><input type="text" placeholder="Full name"  required></ul>
-                <ul><input type="email" placeholder="Email Address"  required></ul>
-                <ul><input oninput="checkNumber()" id="number" type="text" placeholder="Phone number" required></ul>
-                <ul><textarea class="contact" name="description" cols="60" rows="13" placeholder="Comment" ></textarea></ul>
-                <ul><input type="submit" class="button" value="SEND"></ul>
+            <form action="" id="form-respond">
+                <div class="form-caption">
+                    <input type="text" id="first-name" class="form-text-caption" placeholder="First name*">
+                    <span class="form-note"></span>
+                </div>
+                <div class="form-caption">
+                    <input type="text" id="last-name" class="form-text-caption" placeholder="Last name*">
+                    <span class="form-note"></span>
+                </div>
+
+                <div class="form-caption">
+                    <input type="email" id="email" class="form-text-caption"  placeholder="Email Address*">
+                    <span class="form-note"></span>
+                </div>
+
+                <div class="form-caption">
+                    <input oninput="checkNumber()" id="number" class="form-text-caption" type="text" placeholder="Phone number*">
+                    <span class="form-note"></span>
+                </div>
+
+                <div>
+                    <input type="submit" class="button" value="Submit">
+                </div>
             </form>
         </div> 
         <div class="gotop">
@@ -117,5 +135,27 @@
                 <h5> Copyright &copy; VESTONVUX</h5>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // Mong muốn của chúng ta  
+          Validator({
+            form: '#form-respond',
+            formGroupSelector: '.form-caption',
+            errorSelector: '.form-note',
+            rules: [
+                Validator.isRequired('#first-name', 'The name field is required'),
+                Validator.isRequired('#last-name', 'The surname field is required'),
+                Validator.isRequired('#email', 'The email address field is required'),
+                Validator.isEmail('#email', 'Please enter a valid email address.'),
+                Validator.isRequired('#number', 'The phone number field is required'),
+            ],
+            onSubmit: function (data) {
+              // Call API
+              console.log(data);
+            }
+          });
+        });
+  
+      </script>
 </body>
 </html>

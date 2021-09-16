@@ -55,7 +55,8 @@ h2.create {
     outline: none;
     font-size: 1rem;
     font-family: Questrial, sans-serif;
-    border-bottom-left-radius: 7px;
+    border-radius: 0 0 0 7px;
+    width: 100%;
 }
 
 .form-text:hover {
@@ -323,7 +324,7 @@ a:hover {
     .form-text {
         font-size: 0.35rem !important;
         border-bottom: 0.5px solid rgb(170, 168, 168);
-        border-bottom-left-radius: 2.5px;
+        border-radius: 0 0 0 2.5px;
         padding-top: 8px;
         height: 20px;
         padding-left: 3px;

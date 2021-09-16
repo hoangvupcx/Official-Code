@@ -255,15 +255,15 @@ div.lienhe > p:not(:first-child), p > iframe { /* Lấy tất cả thẻ p trong
     font-family: 'Mallanna', sans-serif;
     display: inline-block;
 }
-ul > input {
-    font-family: "AktivGrotesk-Regular";
+div.form-caption > input {
+    font-family: Questrial, sans-serif;
     font-size: 0.91rem;
     border: 1px solid #181818;
     height: 45px;
     width: 40%;
 }
 textarea {
-    font-family: "AktivGrotesk-Regular";
+    font-family: Questrial, sans-serif;
     font-size: 0.91rem;
     border: 1px solid #181818;
     width: 40%;
@@ -271,16 +271,49 @@ textarea {
 input.button {
     background-color: black;
     color: whitesmoke;
-    width: 60px;
-    font-family: 'Besley', serif;
+    font-family: Questrial, sans-serif;
+    letter-spacing: 1px;
     font-size: 17px;
+    border-color: black;
     font-weight: bold;
-    width: 80px;
+    width: 40%;
+    height: 45px;
 }
 input.button:hover {
     background-color: white;
     color: black;
     border: 2px solid black ;
+}
+div.form-caption {
+    display: block;
+    margin-bottom: 25px;
+}
+div.form-caption span {
+    display: block;
+}
+.form-caption.invalid .form-note {
+    padding-top: 2px;
+    color: #f33a58;
+    font-family: Questrial, sans-serif;
+}
+.form-text-caption {
+    height: 40px;
+    padding-top: 8px;
+    padding-left: 12px;
+    border: none !important;
+    border-bottom: 2px solid rgb(170, 168, 168) !important;
+    outline: none;
+    font-family: Questrial, sans-serif;
+    border-radius: 0 0 0 7px;
+}
+
+.form-text-caption:hover {
+    border-bottom: 2px solid black !important;
+}
+
+.form-caption.invalid .form-text-caption {
+    border-color: #f33a58 !important;
+    font-family: Questrial, sans-serif;
 }
 /*------------------------------End Contact--------------------------------*/
 
@@ -392,7 +425,7 @@ input.button:hover {
     height: 3rem;
     border: none;
     border-bottom: 2px solid rgb(170, 168, 168);
-    border-bottom-left-radius: 7px;
+    border-radius: 0 0 0 7px;
     font-size: 1rem;
     width: 400px;
     text-align: center; 
@@ -562,19 +595,22 @@ div.item-footer p {
     }
     input.button {
         font-size: 10px;
-        width: 50px;
+        width: 400px;
         height: 30px;
     }
-    ul > input, textarea {
+    div.form-caption > input {
         font-size: 15px;
-        width: 350px;
-        font-family: Questrial, sans-serif;
+        width: 400px;
     }
-    ul > input {
+    div.form-caption > input {
         height: 35px;
     }
-    .responds ul {
+    .responds div {
         margin: 15px !important;
+    }
+    
+    .form-caption.invalid .form-note {
+        font-size: 15px;
     }
 
     /*-------------------End Contact-----------------*/
@@ -715,6 +751,19 @@ div.item-footer p {
     .content-newletter {
         font-size: 12px;
     }
+    input.button {
+        width: 300px;
+        border: 1.5px solid black !important;
+    }
+    div.form-caption > input {
+        width: 300px;
+    }
+    .form-text-caption {
+        border-bottom: 1.5px solid rgb(170, 168, 168);
+    }
+    .form-text-caption:hover {
+        border-bottom: 1.5px solid black !important;
+    }
 }
 @media screen and (max-width: 750px) /*250%*/ {
     /*---------------Newletter---------------*/
@@ -770,16 +819,19 @@ div.item-footer p {
     }
     input.button {
         font-size: 10px;
-        width: 50px;
+        width:  280px !important;
         height: 30px;
     }
-    ul > input, textarea {
+    div.form-caption > input {
         font-size: 12px;
         width: 280px;
         border: 1px solid black;
     }
-    ul > input {
+    div.form-caption > input {
         height: 30px;
+    }
+    .form-caption.invalid .form-note {
+        font-size: 12px;
     }
 /*-------------------End Contact-----------------*/
 
@@ -927,7 +979,6 @@ div.item-footer p {
     }
     .form-content span {
         font-size: 9px;
-
     }
     /*---------------End Newletter---------------*/
 
@@ -950,21 +1001,27 @@ div.item-footer p {
     }
     input.button {
         font-size: 8px;
-        width: 40px;
+        width: 230px !important;
         height: 20px;
     }
-    ul > input, textarea {
+    div.form-caption > input {
         font-size: 8px;
-        width: 230px;
+        width: 230px !important;
         border: 0.75px solid black;
+        height: 25px !important;
+        padding-left: 8px !important;
     }
-    ul > input {
-        height: 25px;
-    }
-    .responds ul {
+    .responds div {
         margin: 10px !important;
     }
+    .form-caption.invalid .form-note{
+        font-size: 8px;
+    }
     /*-------------------End Contact-----------------*/
+
+    
+
+
 
     /*-------------------Home & Products------------------------*/
     .slider {
@@ -1099,17 +1156,24 @@ div.item-footer p {
     div.lienhe > p:not(:first-child), p > iframe {
         font-size: 8px;
     }
-    ul > input, textarea {
-        font-size: 7px;
-        width: 170px;
-        border: 0.5px solid black;
-        border-radius: 2px;
+    input.button {
+        font-size: 8px;
+        width: 170px !important;
+        height: 20px;
+        border: 1px solid black !important;
     }
-    ul > input {
+    div.form-caption > input:not(:last-child) {
+        width: 170px !important;
+        font-size: 7px;
+        border-bottom: 1px solid black !important;
+        border-radius: 0 0 0 5px !important;
         height: 20px;
     }
-    .responds ul {
+    .responds div {
         margin: 5px !important;
+    }
+    .form-caption.invalid .form-note {
+        font-size: 7px;
     }
     /*-------------------End Contact-----------------*/
     
@@ -1198,16 +1262,16 @@ div.item-footer p {
         font-size: 5px;
         line-height: 5px;
     }
-    ul > input, textarea {
-        font-size: 7px;
-        width: 120px;
-        border: 0.35px solid black;
-        border-radius: 1.5px;
+    
+    input.button {
+        width: 140px !important;
     }
-    ul > input {
+    div.form-caption > input:not(:last-child) {
+        width: 140px !important;
+        border: 0.55px solid black;
         height: 15px;
     }
-    .responds ul {
+    .responds div {
         margin: 0px !important;
     }
 
