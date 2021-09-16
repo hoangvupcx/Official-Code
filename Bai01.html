@@ -7,26 +7,59 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./Css/Bai01.css">
     <link rel="shortcut icon" href="Images/programming.png">
+    <link rel="stylesheet" href="Js/JavaScript.js">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Document</title>
+    <script>
+        $(document).ready(function() {
+            $('nav ul.menu a').click(function() {
+                var h = $(this).attr('href')
+
+                $('html,  body').animate({
+                    scrollTop: $(h).prop('offsetTop') + "px"
+                }, 1000)
+            })
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() >= 100) {
+                    $('nav').css({
+                        "position": "fixed",
+                        "left": 0,
+                        "right": 0,
+                        "top": 0,
+                        "z-index": 999,
+                        "opacity": 0.6
+                    })
+                }
+                else {
+                    $('nav').css({
+                        "position": "relative",
+                        "opacity": 1
+                    })
+                }
+            })
+        })
+
+    </script>
 </head>
 <body>
     <nav>
         <ul class="menu">
             <li>
                 <a href="">
-                    <img src="./home.png" alt="home">
+                    <img src="/images/images/icons/home.png" alt="home">
                     <span>Trang chủ</span>
                 </a>
             </li>
             <li>
-                <a href="">
-                    <img src="./home.png" alt="home">
+                <a href="#forum">
+                    <img src="/images/images/icons/forum.png" alt="home">
                     <span>Diễn đàn</span>
                 </a>
             </li>
             <li class="sub">
                 <a href="">
-                    <img src="./home.png" alt="home">
+                    <img src="/images/images/icons/programming.png" alt="home">
                     <span>Học lập trình</span>
                 </a>
                 <ul class="menu subcontent ">
@@ -38,20 +71,20 @@
                 </ul>
             </li>
             <li>
-                <a href="">
-                    <img src="./home.png" alt="home">
-                    <span>Giải trí</span>
+                <a href="#news">
+                    <img src="/images/images/icons/news.png" alt=new">
+                    <span>Tin tức công nghệ</span>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="./home.png" alt="home">
+                    <img src="/images/images/icons/contact.png" alt="home">
                     <span>Liên hệ</span>
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src="./home.png" alt="home">
+                    <img src="/images/images/icons/news.png" alt="home">
                     <span>Tin tức</span>
                 </a>
             </li>
@@ -59,23 +92,236 @@
     </nav>
     <header>
         <div class="header">
-            <div>
-                <img src="./computer.png" alt="">
+            <div class="col10">
+                <img src="/images/images/computer.png" alt="home">
             </div>
-            <div>
+            <div class="col70">
                 <h1>TIN HỌC VÀ ĐỜI SỐNG</h1>
             </div>
-            <div>
+            <div class="col20">
                 <input class="form-control" type="text" name="" placeholder="Nhập từ khóa..">
                 <input class="form-control" type="button" name="" value="Tìm kiếm">
             </div>
         </div>
     </header>
-    <section>
 
+    <aside class="ads">
+        <ul class="menu">
+            <li><a href="#">
+                <img src="/images/images/icons/facebook.png" alt="facebook">
+            </a></li>
+            <li><a href="#">
+                <img src="/images/images/icons/googleplus.png" alt="googleplus">
+            </a></li>
+            <li><a href="#">
+                <img src="/images/images/icons/linkin.png" alt="linkin">
+            </a></li>
+            <li><a href="#">
+                <img src="/images/images/icons/twitter.png" alt="twitter">
+            </a></li>
+        </ul>
+    </aside>
+
+    <section class="courses">
+        <div class="items">
+            <div class="item">
+                <div>
+                    <h1>Lập trình C++</h1>
+                    <div>
+                        <img src="/images/images/programming-language/cpp.png" alt="CPP">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <h1>Lập trình Java</h1>
+                    <div>
+                        <img src="/images/images/programming-language/java.png" alt="Java">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <h1>Thiết kế Web</h1>
+                    <div>
+                        <img src="/images/images/programming-language/html.png" alt="html">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <h1>Lập trình Python</h1>
+                    <div>
+                        <img src="/images/images/programming-language/python.png" alt="Python">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <h1>Android</h1>
+                    <div>
+                        <img src="/images/images/programming-language/android.png" alt="android">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <h1>Ios</h1>
+                    <div>
+                        <img src="/images/images/programming-language/ios.png" alt="ios">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <h1>Lập trình C#</h1>
+                    <div>
+                        <img src="/images/images/programming-language/csharp.png" alt="C#">
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <h1>Lập trình Css</h1>
+                    <div>
+                        <img src="/images/images/programming-language/css.png" alt="Css">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="news" id="news">
+            <h1 class="subject">
+                <span>Tin tức công nghệ</span>
+            </h1>
+            <div class="posts">
+                <div class="post">
+                    <div class="col10">
+                        <img src="/images/images/category1.jpg" alt="post 1">
+                    </div>
+                    <div class="col90">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nostrum repellat iure eveniet assumenda. Quo a non itaque, molestias veniam ex, modi et excepturi architecto dolores officiis quas blanditiis aperiam.</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="col10">
+                        <img src="/images/images/category1.jpg" alt="post 1">
+                    </div>
+                    <div class="col90">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nostrum repellat iure eveniet assumenda. Quo a non itaque, molestias veniam ex, modi et excepturi architecto dolores officiis quas blanditiis aperiam.</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="col10">
+                        <img src="/images/images/category1.jpg" alt="post 1">
+                    </div>
+                    <div class="col90">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nostrum repellat iure eveniet assumenda. Quo a non itaque, molestias veniam ex, modi et excepturi architecto dolores officiis quas blanditiis aperiam.</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="col10">
+                        <img src="/images/images/category1.jpg" alt="post 1">
+                    </div>
+                    <div class="col90">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nostrum repellat iure eveniet assumenda. Quo a non itaque, molestias veniam ex, modi et excepturi architecto dolores officiis quas blanditiis aperiam.</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="col10">
+                        <img src="/images/images/category1.jpg" alt="post 1">
+                    </div>
+                    <div class="col90">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nostrum repellat iure eveniet assumenda. Quo a non itaque, molestias veniam ex, modi et excepturi architecto dolores officiis quas blanditiis aperiam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="forum" id="forum">
+            <h1 class="subject">
+                <span>Diễn đàn công nghệ</span>
+            </h1>
+            <div class="posts">
+                <div class="post">
+                    <div class="col10">
+                        <img src="/images/images/category1.jpg" alt="post 1">
+                    </div>
+                    <div class="col90">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nostrum repellat iure eveniet assumenda. Quo a non itaque, molestias veniam ex, modi et excepturi architecto dolores officiis quas blanditiis aperiam.</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="col10">
+                        <img src="/images/images/category1.jpg" alt="post 1">
+                    </div>
+                    <div class="col90">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nostrum repellat iure eveniet assumenda. Quo a non itaque, molestias veniam ex, modi et excepturi architecto dolores officiis quas blanditiis aperiam.</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="col10">
+                        <img src="/images/images/category1.jpg" alt="post 1">
+                    </div>
+                    <div class="col90">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nostrum repellat iure eveniet assumenda. Quo a non itaque, molestias veniam ex, modi et excepturi architecto dolores officiis quas blanditiis aperiam.</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="col10">
+                        <img src="/images/images/category1.jpg" alt="post 1">
+                    </div>
+                    <div class="col90">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nostrum repellat iure eveniet assumenda. Quo a non itaque, molestias veniam ex, modi et excepturi architecto dolores officiis quas blanditiis aperiam.</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="col10">
+                        <img src="/images/images/category1.jpg" alt="post 1">
+                    </div>
+                    <div class="col90">
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nostrum repellat iure eveniet assumenda. Quo a non itaque, molestias veniam ex, modi et excepturi architecto dolores officiis quas blanditiis aperiam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <footer>
+        <div class="my-footer">
+            <div class="col30">
+                <p>Khoa CNTT, Đại học Mở Tp.HCM &copy; 2021</p>
+                <ul>
+                    <li>Nguyễn Văn A</li>
+                    <li>35-37 Hồ Hảo Hớn, Quận 1. Tp.HCM</li>
 
+                </ul>
+            </div>
+            <div class="col30">
+                <p><em>Nhập email để nhận thông báo mới</em></p>
+                <input type="text" placeholder="Nhập email...">
+                <input type="button" value="Theo dõi" name="" id="">
+            </div>
+            <div class="col30">
+                <p>Danh mục</p>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Diễn đàn</a></li>
+                    <li><a href="#">Học lập trình</a></li>
+                    <li><a href="#">Giải trí</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

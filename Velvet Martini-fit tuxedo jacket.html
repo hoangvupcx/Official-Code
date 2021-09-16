@@ -13,47 +13,8 @@
     <link rel="stylesheet" href="./Css/Home.css">
     <link rel="stylesheet" href="./Css/Products.css">
     <link rel="stylesheet" href="./Css/Items-Product.css">
+    <script src="./Js/JavaScript.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $(window).scroll(function() {
-                if ($(this).scrollTop() > 2800)
-                $('.accordion').hide("slow")
-                else
-                $('.accordion').show("slow")
-            })
-
-            $(window).scroll(function(event) {
-                var pos_body = $('html,body').scrollTop();
-                if(pos_body>20){
-                    $('.gotop').addClass('hien-ra');
-                }
-                else{
-                    $('.gotop').removeClass('hien-ra');
-                }
-                if(pos_body<2000){
-                    $('.accordion').addClass('hien-ra');
-                }
-                else{
-                    $('.accordion').removeClass('hien-ra');
-                }
-            });
-
-            $('.gotop').click(function(event) {
-                $('html,body').animate({scrollTop: 0},800);
-            });
-
-            $('.gobot').click(function(event) {
-                $('html,body').animate({scrollTop: 3000},800);
-            });
-
-            $('.accordion-item1.active .accordion-body1').slideDown();
-            $('.accordion-header1').click(function(){
-                $(this).parent().toggleClass('active');
-                $(this).parent().children('.accordion-body1').slideToggle(); // Từ header tìm về cha (item) rồi đưa về con (body)
-            })
-        });
-    </script>
     <style>
         .menu li:nth-child(5) > a {
             color: red !important;
@@ -141,7 +102,7 @@
         </div>
 
         <!----------------Description--------------->
-        <div class="Detail-product"> 
+        <div class="Detail-product" id="news"> 
             <div class="row1">
                 <h5>Description</h5>
                 <div style="margin-bottom: 15px;">
@@ -229,9 +190,7 @@
         
         <div class="accordion">
             <div class="accordion-items active">
-                <div class="accordion-header">
-                    <pre class="header-detail">More Information</pre>
-                </div>
+                
                 <div class="accordion-body">
                     <div class="box" id="hideId">
                         <div class="text-product">
@@ -252,7 +211,11 @@
                         </div>
                     </div>              
                 </div>
+                <div>
+                    <a href="./Login.html"><button class="shopping">Add to bag</button></a>
+                </div>
             </div>
+            
         </div>
     </div>
 

@@ -13,43 +13,6 @@
     <link rel="stylesheet" href="./Css/Home.css">
     <link rel="stylesheet" href="./Css/Items-Product.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        function checkNumber() {
-                var x = document.getElementById("number").value
-                if(isNaN(x)){
-                    document.getElementById("number").style.border = "1px solid red"
-                }
-                else {
-                    document.getElementById("number").style.border = "none"
-                }
-            }
-
-        $(document).ready(function() {
-            $(window).scroll(function(event) {
-                var pos_body = $('html,body').scrollTop();
-                if(pos_body>20){
-                    $('.gotop').addClass('hien-ra');
-                }
-                else{
-                    $('.gotop').removeClass('hien-ra');
-                }
-            });
-            $('.gotop').click(function(event) {
-                $('html,body').animate({scrollTop: 0},800);
-            });
-        });
-
-       /* var timeOut;
-        function scrollToTop() {
-            if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
-                window.scrollBy(0, -50);
-                timeOut = setTimeout('scrollToTop()', 10)
-            }
-            else {
-                clearTimeout(timeOut);
-            }
-        } */
-    </script>
     <style>
         .menu li:nth-child(7) > a {
             color: red !important;

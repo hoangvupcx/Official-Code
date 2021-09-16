@@ -77,11 +77,24 @@ h5 {
     z-index: 0;
 }
 .accordion-items {
-    right: 2%;
+    right: 1%;
     display: block;
     position: fixed;
     top: 16%;
     width: 20%;
+}
+.shopping {
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: 'Questrial', sans-serif; 
+}
+.shopping:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
 }
 ::-webkit-scrollbar { /* Xóa mép thanh scroll */
     width: 7px;
@@ -93,12 +106,6 @@ h5 {
 ::-webkit-scrollbar-thumb:hover {
     background-color: rgb(78, 76, 76);
 }
-.header-detail {
-    padding: 0px;
-    font-size: 1.35rem;
-    color: #666;
-}
-
 .more-information {
     color: #666;
     text-decoration: underline;
@@ -178,7 +185,7 @@ h5 {
     padding-top: 0.6rem;
 }
 
-.media .carousel-inner img, .media-text-product p{
+.media .carousel-inner img, .media-text-product{
     width: 100%;
     clear: both;
     display: none;
@@ -186,15 +193,19 @@ h5 {
 }
 
 /*------------------Media Query----------------------*/
-@media screen and (max-width: 1450px) /*110%*/ {
-    .accordion {
-        opacity: 0;
-    }
-    .picture-product img {
-        width: 49%;
-    }
-}
+
 @media screen and (max-width: 1050px) /*150%*/ {
+    div.text-product p, div.text-product pre {
+        font-size: 15px;
+    }
+    .accordion-items {
+        top: 20%;
+        right: 0;
+    }
+    button.shopping {
+        font-size: 15px;
+        height: 40px;
+    }
     .menu-details > a, pre {
         font-size: 15px;
         padding: 8px;
@@ -209,6 +220,15 @@ h5 {
     }
     .Detail-product h5 {
         font-size: 25px;
+    }
+}
+@media screen and (max-width: 800px) /*200%*/ {
+    div.text-product p, div.text-product pre {
+        font-size: 12px;
+    }
+    button.shopping {
+        font-size: 12px;
+        height: 30px;
     }
 }
 @media screen and (max-width: 950px) /*175%*/  {
@@ -226,6 +246,9 @@ h5 {
     }
 }
 @media screen and (max-width: 750px) /*250%*/ {
+    .accordion {
+        display: none;
+    }
     .menu-details > a, pre {
         font-size: 15px;
         padding: 6px;
@@ -239,7 +262,7 @@ h5 {
     .media .carousel-inner img, .media-text-product p {
         display: block;
     }
-     .media-add-to-bag {
+    .media-add-to-bag {
         font-size: 15px;
         height: 30px;
     }

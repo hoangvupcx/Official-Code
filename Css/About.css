@@ -513,9 +513,6 @@ option {
         border: 0.5px solid black;
         background-color: white;
     }
-    option {
-        font-size: 6px;
-    }
     .message {
         padding-top: 10px;
     }
@@ -523,6 +520,9 @@ option {
         border: 0.5px solid black !important;
         font-size: 5px !important;
         background-color: white;
+    }
+    option {
+        font-size: 6px;
     }
     label {
         font-size: 5px;

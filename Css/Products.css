@@ -73,8 +73,12 @@ div.text-product p:first-child {
     letter-spacing: 1px;
     text-decoration: none;
 }
+.menu-product > li > a {
+    transition: 0.5s;
+}
 .menu-product > li > a:hover {
     color: black;
+    transform: scale(1.1);
 }
 .menu-product {
     display: flex;
