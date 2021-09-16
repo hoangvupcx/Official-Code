@@ -409,7 +409,7 @@ option {
         margin: 65px auto;
     }
     div.footer-about {
-        height: 820px;
+        height: 940px;
     }
     .fill-in h1 {
         font-size: 18px;
@@ -481,7 +481,7 @@ option {
         margin-top: 30px;
     }
     div.footer-about {
-        height: 750px;
+        height: 780px !important;
     }
     #book-appointment {
         margin-left: 2px;

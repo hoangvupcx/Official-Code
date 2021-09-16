@@ -255,7 +255,7 @@ div.lienhe > p:not(:first-child), p > iframe { /* Lấy tất cả thẻ p trong
     font-family: 'Mallanna', sans-serif;
     display: inline-block;
 }
-div.form-caption > input {
+div.form-caption > input.form-text-caption.form-text-caption {
     font-family: Questrial, sans-serif;
     font-size: 0.91rem;
     border: 1px solid #181818;
@@ -598,11 +598,11 @@ div.item-footer p {
         width: 400px;
         height: 30px;
     }
-    div.form-caption > input {
+    div.form-caption > input.form-text-caption {
         font-size: 15px;
         width: 400px;
     }
-    div.form-caption > input {
+    div.form-caption > input.form-text-caption {
         height: 35px;
     }
     .responds div {
@@ -755,7 +755,7 @@ div.item-footer p {
         width: 300px;
         border: 1.5px solid black !important;
     }
-    div.form-caption > input {
+    div.form-caption > input.form-text-caption {
         width: 300px;
     }
     .form-text-caption {
@@ -822,12 +822,12 @@ div.item-footer p {
         width:  280px !important;
         height: 30px;
     }
-    div.form-caption > input {
+    div.form-caption > input.form-text-caption {
         font-size: 12px;
         width: 280px;
         border: 1px solid black;
     }
-    div.form-caption > input {
+    div.form-caption > input.form-text-caption {
         height: 30px;
     }
     .form-caption.invalid .form-note {
@@ -1004,10 +1004,10 @@ div.item-footer p {
         width: 230px !important;
         height: 20px;
     }
-    div.form-caption > input {
+    div.form-caption > input.form-text-caption {
         font-size: 8px;
         width: 230px !important;
-        border: 0.75px solid black;
+        border: 0.75px solid rgb(170, 168, 168);
         height: 25px !important;
         padding-left: 8px !important;
     }
@@ -1162,10 +1162,10 @@ div.item-footer p {
         height: 20px;
         border: 1px solid black !important;
     }
-    div.form-caption > input:not(:last-child) {
+    div.form-caption > input.form-text-caption:not(:last-child) {
         width: 170px !important;
         font-size: 7px;
-        border-bottom: 1px solid black !important;
+        border-bottom: 1px solid rgb(170, 168, 168) !important;
         border-radius: 0 0 0 5px !important;
         height: 20px;
     }
@@ -1266,7 +1266,7 @@ div.item-footer p {
     input.button {
         width: 140px !important;
     }
-    div.form-caption > input:not(:last-child) {
+    div.form-caption > input.form-text-caption:not(:last-child) {
         width: 140px !important;
         border: 0.55px solid black;
         height: 15px;
