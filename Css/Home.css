@@ -219,8 +219,6 @@ li.first {
 div.header {
     height: 500px;
     background-image: url(https://images.pexels.com/photos/3771097/pexels-photo-3771097.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    background-position-y: -120px;
-    background-position-x: -100px;
     background-size: cover; /* Tự động giãn so với kích thước */
     background-attachment: fixed; /* Cố định hình */
     display: flex;
@@ -254,6 +252,9 @@ div.lienhe > p:not(:first-child), p > iframe { /* Lấy tất cả thẻ p trong
     float: left;
     font-family: 'Mallanna', sans-serif;
     display: inline-block;
+}
+p > iframe {
+    height: 450px;
 }
 div.form-caption > input.form-text-caption.form-text-caption {
     font-family: Questrial, sans-serif;
@@ -593,6 +594,9 @@ div.item-footer p {
         padding-left: 30px;
         margin-bottom: 7px;
     }
+    p > iframe {
+        height: 400px;
+    }
     input.button {
         font-size: 10px;
         width: 400px;
@@ -738,10 +742,17 @@ div.item-footer p {
         margin-top: 30px;
     }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) /*175%*/ {
     ul.menu > li:not(:first-child) > a  {
         font-size: 80%;
         padding: 8px;
+    }
+    input.button {
+        width:  400px !important;
+    }
+    
+    div.form-caption > input.form-text-caption {
+        width: 400px !important;
     }
 }
 @media screen and (max-width: 800px) /*200%*/ {
@@ -752,11 +763,11 @@ div.item-footer p {
         font-size: 12px;
     }
     input.button {
-        width: 300px;
+        width: 350px !important;
         border: 1.5px solid black !important;
     }
     div.form-caption > input.form-text-caption {
-        width: 300px;
+        width: 350px !important;
     }
     .form-text-caption {
         border-bottom: 1.5px solid rgb(170, 168, 168);
@@ -817,6 +828,9 @@ div.item-footer p {
         margin-bottom: 5px;
         line-height: 10px;
     }
+    p > iframe {
+        height: 350px;
+    }
     input.button {
         font-size: 10px;
         width:  280px !important;
@@ -824,7 +838,7 @@ div.item-footer p {
     }
     div.form-caption > input.form-text-caption {
         font-size: 12px;
-        width: 280px;
+        width: 280px !important;
         border: 1px solid black;
     }
     div.form-caption > input.form-text-caption {
@@ -999,13 +1013,16 @@ div.item-footer p {
         padding-left: 10px;
         margin-bottom: 3px;
     }
+    p > iframe {
+        height: 250px;
+    }
     input.button {
         font-size: 8px;
         width: 230px !important;
         height: 20px;
     }
     div.form-caption > input.form-text-caption {
-        font-size: 8px;
+        font-size: 8px !important;
         width: 230px !important;
         border: 0.75px solid rgb(170, 168, 168);
         height: 25px !important;
@@ -1156,6 +1173,9 @@ div.item-footer p {
     div.lienhe > p:not(:first-child), p > iframe {
         font-size: 8px;
     }
+    p > iframe {
+        height: 200px;
+    }
     input.button {
         font-size: 8px;
         width: 170px !important;
@@ -1264,10 +1284,10 @@ div.item-footer p {
     }
     
     input.button {
-        width: 140px !important;
+        width: 130px !important;
     }
     div.form-caption > input.form-text-caption:not(:last-child) {
-        width: 140px !important;
+        width: 130px !important;
         border: 0.55px solid black;
         height: 15px;
     }
