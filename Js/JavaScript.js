@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $(window).scroll(function() {
-        if ($(this).scrollTop() >= $(".picture-product img:last-child").prop('offsetTop'))
+        if ($(this).scrollTop() >= $(".picture-product img:last-child").prop('offsetTop') || $(this).scrollTop() < 0)
         $('.accordion').hide("slow")
         else
         $('.accordion').show("slow")
@@ -30,7 +30,7 @@ $(document).ready(function() {
                 "right": 0,
                 "top": 0,
                 "z-index": 999,
-                "opacity": 1
+                "opacity": 0.8
             })
         }
         else {
